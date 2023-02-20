@@ -70,4 +70,13 @@
   heightHeader();
 
   //   // scroll to section
+  // footer
+  const calaps = document.querySelectorAll(".calaps");
+  console.log(calaps);
+  for (let i = 0; i < calaps.length; i++) {
+    console.log(calaps[i].querySelector(".calaps__opener"));
+    calaps[i].querySelector(".calaps__opener").addEventListener("click", function () {
+      calaps[i].classList.toggle("active");
+    });
+  }
 })();

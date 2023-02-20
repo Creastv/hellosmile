@@ -56,12 +56,13 @@ function filter_plugin_updates( $value ) {
 function ka_override_MCE_options($init)
   {
     $custom_colors = '
-          "bc9c3b", "Main color",
-          "000000", "Black",
-          "989898", "Light black",
-          "c6ced3", "Gray",
+          "575289", "Main color",
+          "9df7de", "Main 2 color",
+          "ffe681", "Main 3 color",
+          "0d0b1e", "Black",
+          "545454", "Light black",
+          "eeeef0", "Gray",
           "d7d7d7", "Gary dark",
-          "eaf2f7", "Light",
       ';
     // build color grid palette
     $init['textcolor_map'] = '[' . $custom_colors . ']';
@@ -81,13 +82,19 @@ function ka_override_MCE_options($init)
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page(array(
+    'page_title' => 'Hello Smile settings',
+    'menu_title' => 'Hello Smile settings',
+    'parent_slug' => 'themes.php',
+  ));
+}
 
-// disable gut for pages
-// add_filter( 'use_block_editor_for_post', 'my_disable_gutenberg', 10, 2 );
 
-// function my_disable_gutenberg( $can_edit, $post ) {
-//   if ( !get_page_template_slug( $post->ID ) == 'page-home.php' && !get_page_template_slug( $post->ID ) == 'page-contact.php') {
-//     return true;
-//   }
-//   return false;
-// }
+/// modify the path to the icons directory
+add_filter('acf_icon_path_suffix',
+  function ( $path_suffix ) {
+    return '/src/img/icons/'; // After assets folder you can define folder structure
+  }
+);
+

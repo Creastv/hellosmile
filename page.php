@@ -12,7 +12,6 @@ while ( have_posts() ) : the_post(); ?>
 		the_content();
 		?>
     </div>
-    <footer class="entry-footer"></footer>
 </article>
 
 <?php endwhile;

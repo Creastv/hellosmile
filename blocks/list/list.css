@@ -35,8 +35,6 @@ h6,
 
 p,
 li {
-  font-size: 14px;
-  line-height: 22px;
   color: #545454;
 }
 
@@ -56,11 +54,6 @@ a {
   line-height: 22px;
   margin-bottom: 30px;
   font-weight: 300;
-}
-.entry-content p,
-.entry-content li,
-.entry-content a {
-  font-size: 14px;
 }
 
 .text-center {
