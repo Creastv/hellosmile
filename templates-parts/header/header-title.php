@@ -1,4 +1,4 @@
-<header class="t-page <?php echo the_ID()?>">
+<header class="entry-header">
     <h1 class="entry-title">
         <?php if ( is_category() ) :
 					single_cat_title();					
@@ -32,4 +32,8 @@
 						_e( 'Blog', 'go' );
 				endif; ?>
     </h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="17" viewBox="0 0 29 17">
+        <path id="Shape_3_copy_6" data-name="Shape 3 copy 6" d="M1283.5,1363a14.46,14.46,0,0,1-14.5-14.388,2.632,2.632,0,0,1,5.265,0,9.236,9.236,0,0,0,18.47,0,2.633,2.633,0,0,1,5.265,0A14.46,14.46,0,0,1,1283.5,1363Z" transform="translate(-1269 -1345.999)" fill="#575289" />
+    </svg>
+
 </header>

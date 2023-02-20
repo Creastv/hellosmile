@@ -9,18 +9,21 @@
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
     <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="navbar">
                     <?php get_template_part('templates-parts/header/header', 'brand'); ?>
                     <?php get_template_part('templates-parts/header/header', 'nav'); ?>
                     <?php get_template_part('templates-parts/header/header', 'burger'); ?>
+                    <?php get_template_part('templates-parts/header/header', 'swicher'); ?>
+                    <?php get_template_part('templates-parts/header/header', 'contact'); ?>
+
                 </div>
             </div>
         </div>

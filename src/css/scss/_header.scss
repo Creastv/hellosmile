@@ -1,11 +1,9 @@
 #header {
-  background-color: $black;
-  background-position: top right;
+  border-bottom: 1px solid $gray;
   position: fixed;
   z-index: 99;
   width: 100%;
   top: 0px;
-
   .navbar {
     transition: all 0.3s linear;
     position: relative;
@@ -14,6 +12,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 35px 0;
+    @media #{$lg} {
+      gap: 20px;
+    }
     @media #{$lg} {
       flex-wrap: wrap;
     }
@@ -28,23 +29,6 @@
         width: 100%;
       }
     }
-    ul {
-      // position: relative;
-      margin: 0;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      li {
-        a {
-          text-decoration: none;
-          color: #fff;
-          font-weight: 500;
-          &:hover {
-            color: $main;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -53,56 +37,57 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(#171718, 0.8) !important;
+  background-color: rgba(#fff, 0.9) !important;
   .navbar {
-    padding: 0px !important;
-    @media #{$sm} {
-      padding: 0px 0 !important;
-    }
+    padding: 5px 0 !important;
+    // @media #{$sm} {
+    //   padding: 0px 0 !important;
+    // }
   }
 }
 
 // Logo
 .navbar__brand {
+  @media #{$lg} {
+    flex: auto;
+  }
   @media #{$sm} {
     max-width: 70%;
   }
-  flex: auto;
   * {
     color: #fff;
   }
-  a {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    svg {
-      padding: 10px;
-      @media #{$sm} {
-        padding: 0;
-      }
+  svg {
+    @media #{$xxlg} {
+      width: 215px;
+      height: auto;
     }
-    p {
-      font-size: 22px;
-      line-height: 22px;
-      font-weight: 700;
+    @media #{$xlg} {
+      width: 180px;
+      height: auto;
+    }
+  }
+}
+// contact cta
+.navbar__cta {
+  @media #{$md} {
+    display: none;
+  }
+}
+
+// swicher + panel pacienta
+.navbar__lang-pp {
+  display: flex;
+  align-items: center;
+  @media #{$md} {
+    display: none;
+  }
+  ul {
+    margin-right: 30px;
+    li {
+      list-style: none;
+      padding: 0;
       margin: 0;
-      margin-bottom: 5px;
-      @media #{$sm} {
-        font-size: 16px;
-        line-height: 16px;
-        margin-bottom: 5px;
-      }
-    }
-    span {
-      display: block;
-      font-size: 11px;
-      line-height: 11px;
-      font-weight: 400;
-      @media #{$sm} {
-        font-size: 10px;
-        line-height: 12px;
-        margin-bottom: 5px;
-      }
     }
   }
 }
@@ -114,7 +99,11 @@
   }
   > ul {
     position: relative;
-    padding: 20px 0 20px 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
     @media #{$lg} {
       position: absolute;
       top: 0px;
@@ -128,21 +117,29 @@
       text-align: right;
     }
     li {
+      margin: 0;
+      padding: 0;
       @media #{$lg} {
         transform: translate(100%, 0);
       }
       a {
-        padding: 15px 20px;
-        font-weight: normal;
-
-        span {
-          font-size: 14px;
-          font-weight: 400;
-          text-transform: uppercase;
-          @media #{$lg} {
-            font-size: 21px;
-            display: block;
-          }
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px;
+        color: $light-black;
+        text-decoration: none;
+        @media #{$xxlg} {
+          padding: 15px 10px;
+        }
+        @media #{$xlg} {
+          font-size: 15px;
+        }
+        @media #{$xlg} {
+          font-size: 18px;
+          color: #fff;
+        }
+        &:hover {
+          color: $main;
         }
       }
       .btn {
@@ -157,7 +154,7 @@
     .current_page_item,
     .current-page-ancestor {
       > a {
-        color: $main !important;
+        font-weight: 700;
       }
     }
   }
@@ -193,12 +190,13 @@
   transform: translateY(-2px);
   @media #{$lg} {
     display: flex;
+    order: 4;
   }
   cursor: pointer;
   > span {
     font-size: 12px;
     transform: translateY(1px);
-    color: #fff;
+    color: $light-black;
   }
   .navbar__toggler__btn {
     span {
@@ -206,7 +204,7 @@
       width: 30px;
       height: 3px;
       border-radius: 100px;
-      background-color: #fff;
+      background-color: $light-black;
       transition: all 0.1s linear;
       &:nth-child(2) {
         transform: translateY(3px);
@@ -227,11 +225,12 @@
     }
   }
 }
-
 .navbar__toggler.active {
   .navbar__toggler__btn {
     span {
       // transform-origin: 50% 0;
+      background-color: #fff;
+      transition: initial;
       &:nth-child(1) {
         transform: translateY(0) rotate(45deg);
         transform-origin: 40% 0;
@@ -246,6 +245,26 @@
         width: 100%;
         transform-origin: 30% 0;
       }
+    }
+  }
+}
+
+// title
+
+.entry-header {
+  text-align: center;
+  padding: 50px 0;
+  @media #{$sm} {
+    padding: 30px 0;
+  }
+  .entry-title {
+    font-size: 51px;
+    margin-bottom: 20px;
+    @media #{$md} {
+      font-size: 38px;
+    }
+    @media #{$sm} {
+      font-size: 31px;
     }
   }
 }

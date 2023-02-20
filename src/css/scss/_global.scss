@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Prompt", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -72,7 +72,7 @@ body {
   transform: all 0.8s;
   svg {
     path {
-      fill: $main;
+      fill: $main2;
       transition: all 0.2s liner;
     }
     &:hover {

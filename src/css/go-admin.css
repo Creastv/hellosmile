@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Prompt", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -73,7 +73,7 @@ body {
   transform: all 0.8s;
 }
 #go-to-top svg path {
-  fill: #bc9c3b;
+  fill: #9df7de;
   transition: all 0.2s liner;
 }
 #go-to-top svg:hover path {
@@ -128,7 +128,7 @@ body {
   }
 }
 .l-item .l-item__left img {
-  border: 1px solid #eaf2f7;
+  border: 1px solid #eeeef0;
 }
 @media only screen and (max-width: 460px) {
   .l-item .l-item__left img {
@@ -192,7 +192,7 @@ body {
 .page-template-page-about .bg {
   width: 100%;
   min-height: 100vh;
-  background-color: #000;
+  background-color: #0d0b1e;
   background-position: top right;
   background-size: cover;
   width: 100vw;
@@ -209,16 +209,16 @@ body {
 
 .page-template-page-about .bg-wraper {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(13, 11, 30, 0.5);
   min-height: 100vh;
 }
 @media only screen and (max-width: 768px) {
   .page-template-page-about .bg-wraper {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(13, 11, 30, 0.8);
   }
 }
 .page-template-page-about .h1 {
-  color: #bc9c3b;
+  color: #575289;
   padding: 50px 0;
 }
 @media only screen and (max-width: 998px) {
@@ -253,16 +253,16 @@ body {
 
 .page-template-page-contact .bg-wraper {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(13, 11, 30, 0.5);
   min-height: 100vh;
 }
 @media only screen and (max-width: 768px) {
   .page-template-page-contact .bg-wraper {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(13, 11, 30, 0.8);
   }
 }
 .page-template-page-contact .entry-title {
-  color: #bc9c3b;
+  color: #575289;
 }
 .page-template-page-contact .row-col {
   display: flex;
@@ -312,7 +312,7 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .page-template-page-home .bg-wraper {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(13, 11, 30, 0.8);
   }
 }
 .page-template-page-home .cont__wraper {
@@ -325,7 +325,7 @@ body {
   font-size: 68px;
   font-size: 3.9vw;
   font-weight: 300;
-  color: #bc9c3b;
+  color: #575289;
 }
 @media only screen and (max-width: 768px) {
   .page-template-page-home .cont__wraper .title h1 {
@@ -333,7 +333,7 @@ body {
   }
 }
 .page-template-page-home .cont__wraper .title h1 i {
-  color: #bc9c3b;
+  color: #575289;
 }
 .page-template-page-home .cont__wraper .title p {
   font-size: 33px;
@@ -382,7 +382,7 @@ body {
   font-size: 68px;
   font-size: 3.2vw;
   font-weight: 700;
-  color: #bc9c3b;
+  color: #575289;
 }
 @media only screen and (max-width: 768px) {
   .page-template-page-home .cont__wraper .cta .cta__left a {
@@ -394,13 +394,13 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-  border-color: #bc9c3b;
+  border-color: #575289;
 }
 .page-template-page-home .cont__wraper .cta .cta__right .btn span {
   margin-right: 50px;
 }
 .page-template-page-home .cont__wraper .cta .cta__right .btn:hover {
-  background-color: #bc9c3b;
+  background-color: #575289;
 }
 .page-template-page-home .cont__wraper .cta .cta__right .btn:hover span {
   color: #fff;

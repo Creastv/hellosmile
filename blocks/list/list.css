@@ -1,7 +1,8 @@
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #000;
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #0d0b1e;
 }
 
 h1,
@@ -17,7 +18,7 @@ h6,
 .h5,
 .h6 {
   font-weight: 700;
-  color: #000;
+  color: #0d0b1e;
   margin: 0;
 }
 
@@ -32,54 +33,34 @@ h6,
   }
 }
 
-p {
+p,
+li {
   font-size: 14px;
   line-height: 22px;
-  font-weight: 300;
+  color: #545454;
 }
 
-li {
-  margin-bottom: 20px;
+a {
+  color: #575289;
+  transition: all 0.1s linear;
 }
 
-ul,
-ol {
+.entry-content {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+.entry-content ul,
+.entry-content ol {
   font-size: 14px;
   line-height: 22px;
   margin-bottom: 30px;
   font-weight: 300;
 }
-
-span {
-  font-size: 14px;
-  line-height: 22px;
-}
-
-a {
-  color: #bc9c3b;
-  text-decoration: none;
-  transition: all 0.1s linear;
-  font-weight: 700;
-}
-
 .entry-content p,
 .entry-content li,
 .entry-content a {
   font-size: 14px;
-}
-
-.t-page {
-  padding: 50px 0;
-}
-.t-page .entry-title {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 300;
-}
-@media only screen and (max-width: 768px) {
-  .t-page .entry-title {
-    font-size: 28px;
-  }
 }
 
 .text-center {
@@ -92,7 +73,17 @@ a {
 
 .underline {
   text-decoration: underline; /* Safari */
-  text-decoration-color: #bc9c3b;
+  text-decoration-color: #575289;
+}
+
+.btn-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.btn-panel span {
+  color: #545454;
 }
 
 html {
@@ -106,7 +97,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Prompt", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -170,7 +161,7 @@ body {
   transform: all 0.8s;
 }
 #go-to-top svg path {
-  fill: #bc9c3b;
+  fill: #9df7de;
   transition: all 0.2s liner;
 }
 #go-to-top svg:hover path {
@@ -205,13 +196,13 @@ body {
 }
 #list .header button {
   background: none !important;
-  border: 1px solid #bc9c3b !important;
-  color: #bc9c3b;
+  border: 1px solid #575289 !important;
+  color: #575289;
   cursor: pointer;
 }
 #list .header button:hover {
   color: #fff !important;
-  background-color: #bc9c3b !important;
+  background-color: #575289 !important;
 }
 #list ul {
   padding: 0px;
