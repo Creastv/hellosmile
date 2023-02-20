@@ -1,0 +1,83 @@
+.form-contact {
+  // padding: 0 40px;
+  @media #{$md} {
+    padding: 30px 0;
+  }
+}
+.form-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .form-control {
+    width: 100%;
+    min-height: 55px;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #fff !important;
+    color: #fff;
+    background: none;
+    border: 0;
+  }
+  ::placeholder {
+    color: #fff !important;
+  }
+  .wpcf7-form-control-wrap {
+    width: 100%;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+}
+.form-group.text-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.select2-container--default .select2-selection--multiple {
+  width: 100%;
+  min-height: 55px;
+  padding: 10px;
+  border: 0px !important;
+  border-radius: 0px !important;
+  background-color: $light !important;
+}
+.wpcf7-acceptance {
+  label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    input {
+      width: 50px;
+    }
+    .wpcf7-list-item-label {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}
+
+.wpcf7-submit {
+  margin: 15px;
+  background: none;
+  border: 1px solid $main;
+  color: $main;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  &:hover {
+    background-color: $main;
+    color: #fff;
+  }
+}
+
+.wpcf7-spinner {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+}
+
+.wpcf7-not-valid-tip {
+  //   position: absolute;
+  //   -webkit-transform: translateY(18px);
+  //   transform: translateY(18px);
+  font-size: 12px !important;
+  color: red !important;
+}

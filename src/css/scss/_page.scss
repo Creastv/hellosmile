@@ -1,0 +1,231 @@
+// Error 404
+.error404 {
+  .entry-title {
+    font-size: 100px !important;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .btn {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+#error {
+  padding: 0 0 50px 0;
+}
+
+.page-template-page-home,
+.page-template-page-contact,
+.page-template-page-about {
+  #header {
+    background: none;
+  }
+  #main {
+    margin-bottom: 0px !important;
+  }
+  #footer {
+    margin-top: 0px;
+  }
+  .wraper-bg {
+    width: 100%;
+  }
+
+  .bg {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $black;
+    background-position: top right;
+    background-size: cover;
+    width: 100vw;
+    margin-left: -50vw;
+    left: 50%;
+    position: relative;
+    background-attachment: fixed;
+    * {
+      color: #fff;
+    }
+  }
+}
+.page-template-page-about {
+  .bg-wraper {
+    width: 100%;
+    background-color: rgba($black, 0.5);
+    min-height: 100vh;
+    @media #{$sm} {
+      background-color: rgba($black, 0.8);
+    }
+  }
+  .h1 {
+    color: $main;
+    padding: 50px 0;
+    @media #{$md} {
+      padding: 30px 0;
+    }
+  }
+  .row-col {
+    display: flex;
+    flex-wrap: wrap;
+    .left {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      @media #{$md} {
+        width: 100%;
+      }
+    }
+    .right {
+      width: 40%;
+      padding-left: 50px;
+      @media #{$md} {
+        width: 100%;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+.page-template-page-contact {
+  .bg-wraper {
+    width: 100%;
+    background-color: rgba($black, 0.5);
+    min-height: 100vh;
+    @media #{$sm} {
+      background-color: rgba($black, 0.8);
+    }
+  }
+  .entry-title {
+    color: $main;
+  }
+  .row-col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .left {
+      width: 60%;
+      padding-right: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      @media #{$md} {
+        width: 100%;
+      }
+      .col {
+        width: 50%;
+        @media #{$sm} {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+    .right {
+      width: 35%;
+      @media #{$md} {
+        width: 100%;
+      }
+    }
+  }
+  p {
+    font-weight: 300;
+  }
+  em {
+    font-size: 12px;
+  }
+}
+
+.page-template-page-home {
+  .bg-wraper {
+    width: 100%;
+    min-height: 100vh;
+    @media #{$sm} {
+      background-color: rgba($black, 0.8);
+    }
+  }
+  .cont__wraper {
+    padding-top: 30px;
+
+    .title {
+      padding-bottom: 30px;
+      h1 {
+        font-size: 68px;
+        font-size: 3.9vw;
+        font-weight: 300;
+        color: $main;
+        // max-width: 1100px;
+        @media #{$sm} {
+          font-size: 28px;
+        }
+        i {
+          color: $main;
+        }
+      }
+      p {
+        font-size: 33px;
+        font-size: 1.9vw;
+        line-height: initial;
+        font-weight: 300;
+        max-width: 800px;
+        @media #{$sm} {
+          font-size: 18px;
+        }
+      }
+    }
+    .contact {
+      padding-bottom: 50px;
+      p {
+        font-size: 16px;
+      }
+    }
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 900px;
+      padding-bottom: 100px;
+      @media #{$sm} {
+        padding-bottom: 30px;
+      }
+      .cta__left {
+        span {
+          display: flex;
+          font-size: 24px;
+          font-size: 1.3vw;
+          font-weight: 300;
+          @media #{$sm} {
+            font-size: 18px;
+          }
+        }
+        a {
+          font-size: 68px;
+          font-size: 3.2vw;
+          font-weight: 700;
+          color: $main;
+          @media #{$sm} {
+            font-size: 31px;
+          }
+        }
+      }
+      .cta__right {
+        .btn {
+          font-size: 22px;
+          padding: 20px;
+          display: flex;
+          align-items: center;
+          border-color: $main;
+          span {
+            margin-right: 50px;
+          }
+          &:hover {
+            background-color: $main;
+            span {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

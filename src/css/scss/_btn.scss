@@ -1,0 +1,25 @@
+.btn {
+  color: $black;
+  padding: 10px 25px;
+  border: 1px solid $gray;
+  text-decoration: none;
+  transition: 0.1s linear;
+  &:hover {
+    border-color: $main;
+    color: $main;
+  }
+}
+.btn-main {
+  display: inline-block;
+}
+
+.btn-revers {
+  color: $main;
+  padding: 10px 25px;
+  border: 1px solid $main;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    background-color: $main;
+  }
+}
