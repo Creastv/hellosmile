@@ -7,47 +7,81 @@ footer {
 .f-main {
   margin-bottom: 50px;
   .f-main__wraper {
+    padding: 0 15px;
     display: flex;
     gap: 20px;
+    @media #{$md} {
+      flex-wrap: wrap;
+      padding: 0;
+    }
     @media #{$sm} {
       gap: 0;
-      flex-wrap: wrap;
     }
     .col {
-      @media #{$sm} {
-        width: 100% !important;
-      }
-
       &:nth-child(1) {
-        width: 27%;
+        width: 25%;
+        @media #{$md} {
+          width: calc(40% - 20px);
+        }
+        @media #{$sm} {
+          width: 100% !important;
+        }
       }
       &:nth-child(2) {
-        width: 16%;
+        width: 20%;
+        @media #{$md} {
+          width: calc(30% - 20px);
+        }
+        @media #{$sm} {
+          width: 100% !important;
+        }
       }
       &:nth-child(3) {
-        width: 16%;
+        width: 20%;
+        @media #{$md} {
+          width: calc(30% - 20px);
+        }
+        @media #{$sm} {
+          width: 100% !important;
+        }
       }
       &:nth-child(4) {
-        width: 16%;
+        width: 20%;
+        @media #{$md} {
+          width: calc(40% - 20px);
+        }
+        @media #{$sm} {
+          width: 100% !important;
+        }
       }
       &:nth-child(5) {
-        width: 25%;
+        width: 15%;
+        @media #{$sm} {
+          width: 100% !important;
+        }
       }
     }
   }
   .calaps {
     margin-top: -1px;
+    @media #{$sm} {
+      border-bottom: 1px solid $light-black;
+      padding: 0px 10px;
+    }
     .calaps__opener {
       @media #{$sm} {
-        border-bottom: 1px solid $light-black;
         position: relative;
+
         &::after {
-          content: ">";
+          content: "";
+          background-image: url(../img/icons/arrow.svg);
+          width: 18px;
+          height: 9px;
           display: block;
           position: absolute;
           color: $light-black;
           top: 50%;
-          right: 0px;
+          right: 10px;
           transform: translate(0, -50%);
         }
       }
@@ -56,10 +90,16 @@ footer {
       @media #{$sm} {
         display: none;
         margin-top: 20px;
+        padding-bottom: 10px;
       }
     }
   }
   .calaps.active {
+    .calaps__opener {
+      &::after {
+        transform: translate(0, -50%) rotate(180deg);
+      }
+    }
     .calaps__list {
       display: block !important;
     }
@@ -78,6 +118,7 @@ footer {
       margin: 0;
       padding: 0;
       font-size: 14px;
+      font-weight: 300;
     }
     .link {
       font-size: 14px;
@@ -88,6 +129,11 @@ footer {
       text-decoration: none;
       color: $light-black;
       margin-bottom: 10px;
+      &:hover {
+        color: $main;
+      }
+    }
+    a.link {
       &:hover {
         color: $main;
       }
@@ -116,8 +162,8 @@ footer {
   }
 
   .social-media {
+    margin-top: 30px;
     @media #{$sm} {
-      margin-top: 30px;
       text-align: center;
     }
     > span {

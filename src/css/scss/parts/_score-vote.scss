@@ -1,0 +1,99 @@
+.prove-bar {
+  position: relative;
+  z-index: 55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transform: translate(0px, -50px);
+  @media #{$lg} {
+    transform: translate(0, 0);
+    margin-top: 30px;
+  }
+  @media #{$md} {
+    flex-wrap: wrap;
+  }
+}
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media #{$md} {
+    order: 2;
+  }
+}
+.score-bar {
+  display: flex;
+  justify-content: center;
+  // margin: 0 auto;
+  // transform: translate(0px, -50px);
+
+  .scroe-bar__wraper {
+    // max-width: 745px;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 70px #0000000a;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 20px;
+    }
+  }
+  .score-bar__item {
+    @media #{$sm} {
+      width: calc(50% - 10px);
+    }
+    .top,
+    .bottom {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .num {
+      font-size: 41px;
+      font-weight: 700;
+      color: $main2;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .opi {
+      font-size: 14px;
+      color: #a7a7a7;
+    }
+    .line {
+      position: relative;
+      height: 15px;
+      width: 100%;
+      border-radius: 100px;
+      background-color: #eeeef0;
+      span {
+        position: absolute;
+        border-radius: 100px;
+        height: 100%;
+        width: 90%;
+        background-color: $main2;
+      }
+    }
+    .stars.four {
+      path {
+        &:nth-child(5) {
+          fill: #eeeef0;
+        }
+      }
+    }
+    .stars.three {
+      path {
+        &:nth-child(5),
+        &:nth-child(4) {
+          fill: #eeeef0;
+        }
+      }
+    }
+  }
+}

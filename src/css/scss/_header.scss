@@ -1,6 +1,7 @@
 #header {
+  background-color: #fff;
   border-bottom: 1px solid $gray;
-  position: fixed;
+  // position: fixed;
   z-index: 99;
   width: 100%;
   top: 0px;
@@ -19,7 +20,7 @@
       flex-wrap: wrap;
     }
     @media #{$sm} {
-      padding: 10px 0;
+      padding: 20px 0;
     }
     .navbar__wraper {
       display: flex;
@@ -40,9 +41,9 @@
   background-color: rgba(#fff, 0.9) !important;
   .navbar {
     padding: 5px 0 !important;
-    // @media #{$sm} {
-    //   padding: 0px 0 !important;
-    // }
+    @media #{$sm} {
+      padding: 10px 0 !important;
+    }
   }
 }
 
@@ -70,7 +71,7 @@
 }
 // contact cta
 .navbar__cta {
-  @media #{$md} {
+  @media #{$sm} {
     display: none;
   }
 }
@@ -79,7 +80,7 @@
 .navbar__lang-pp {
   display: flex;
   align-items: center;
-  @media #{$md} {
+  @media #{$sm} {
     display: none;
   }
   ul {
@@ -134,7 +135,7 @@
         @media #{$xlg} {
           font-size: 15px;
         }
-        @media #{$xlg} {
+        @media #{$md} {
           font-size: 18px;
           color: #fff;
         }
@@ -162,7 +163,7 @@
 
 .navbar__navigation.active {
   > ul {
-    transition: all 0.5s linear;
+    transition: all 0.1s linear;
     // right: -8% !important;
     right: -50px !important;
     padding-right: 30px;
@@ -171,7 +172,7 @@
       right: -30px !important;
     }
     li {
-      transition: all 0.5s linear;
+      transition: all 0.4s linear;
       a {
         padding: 0 !important;
       }
@@ -265,6 +266,57 @@
     }
     @media #{$sm} {
       font-size: 31px;
+    }
+  }
+}
+
+.o-border {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  span {
+    position: relative;
+    display: block;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      bottom: 0px;
+      height: 5px;
+    }
+
+    &:nth-child(1) {
+      width: 40%;
+      &:before {
+        width: 50%;
+        background-color: $black;
+      }
+      &:after {
+        width: 50%;
+        left: 50%;
+        background-color: $light;
+      }
+    }
+    &:nth-child(2) {
+      width: 40%;
+      left: 40%;
+      &:before {
+        width: 50%;
+        background-color: $main;
+      }
+      &:after {
+        width: 50%;
+        left: 50%;
+        background-color: $main2;
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        width: 20%;
+        left: 80%;
+        background-color: $main3;
+      }
     }
   }
 }

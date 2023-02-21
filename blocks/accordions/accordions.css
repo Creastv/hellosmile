@@ -79,6 +79,42 @@ a {
   color: #545454;
 }
 
+.section-title {
+  font-size: 51px;
+  line-height: 57px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 998px) {
+  .section-title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 31px;
+    line-height: 37px;
+  }
+}
+.section-title span {
+  color: #575289;
+  display: block;
+  margin: 10px 0;
+}
+@media only screen and (max-width: 768px) {
+  .section-title span {
+    margin: 15px 0;
+  }
+}
+.section-title span b {
+  font-size: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .section-title span b {
+    font-size: 71px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -118,8 +154,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .row {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

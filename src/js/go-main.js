@@ -62,12 +62,12 @@
   });
 
   // set body padding top by geting header height
-  function heightHeader() {
-    const heightHeader = document.querySelector("#header");
-    document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
-  }
-  window.addEventListener("resize", heightHeader);
-  heightHeader();
+  // function heightHeader() {
+  //   const heightHeader = document.querySelector("#header");
+  //   document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
+  // }
+  // window.addEventListener("resize", heightHeader);
+  // heightHeader();
 
   //   // scroll to section
   // footer

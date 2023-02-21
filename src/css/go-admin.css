@@ -37,8 +37,8 @@ body {
 }
 @media only screen and (max-width: 768px) {
   .row {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -406,6 +406,158 @@ body {
   color: #fff;
 }
 
+.prove-bar {
+  position: relative;
+  z-index: 55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  transform: translate(0px, -50px);
+}
+@media only screen and (max-width: 1300px) {
+  .prove-bar {
+    transform: translate(0, 0);
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .prove-bar {
+    flex-wrap: wrap;
+  }
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (max-width: 998px) {
+  .badges {
+    order: 2;
+  }
+}
+
+.score-bar {
+  display: flex;
+  justify-content: center;
+}
+.score-bar .scroe-bar__wraper {
+  background-color: #fff;
+  padding: 20px 50px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.0392156863);
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .score-bar .scroe-bar__wraper {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .score-bar .score-bar__item {
+    width: calc(50% - 10px);
+  }
+}
+.score-bar .score-bar__item .top,
+.score-bar .score-bar__item .bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.score-bar .score-bar__item .num {
+  font-size: 41px;
+  font-weight: 700;
+  color: #9df7de;
+}
+.score-bar .score-bar__item .desc {
+  font-size: 14px;
+  line-height: 18px;
+}
+.score-bar .score-bar__item .opi {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+.score-bar .score-bar__item .line {
+  position: relative;
+  height: 15px;
+  width: 100%;
+  border-radius: 100px;
+  background-color: #eeeef0;
+}
+.score-bar .score-bar__item .line span {
+  position: absolute;
+  border-radius: 100px;
+  height: 100%;
+  width: 90%;
+  background-color: #9df7de;
+}
+.score-bar .score-bar__item .stars.four path:nth-child(5) {
+  fill: #eeeef0;
+}
+.score-bar .score-bar__item .stars.three path:nth-child(5), .score-bar .score-bar__item .stars.three path:nth-child(4) {
+  fill: #eeeef0;
+}
+
+.mod-scroll-novisible {
+  overflow: hidden;
+}
+
+.mod-bg {
+  display: none;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(157, 247, 222, 0.63);
+  overflow: auto;
+  padding: 50px;
+}
+.mod-bg .mod-container {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+}
+.mod-bg .mod-container .mod-wraper {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+  border-radius: 0px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 16px 26px 0px rgba(87, 82, 137, 0.24);
+}
+.mod-bg .mod-container .mod-wraper .close {
+  position: absolute;
+  z-index: 5;
+  right: -5px;
+  top: -10px;
+  color: red;
+  padding: 10px;
+  font-size: 21px;
+  cursor: pointer;
+}
+.mod-bg .mod-container .mod-wraper video {
+  display: block;
+}
+
 .wp-block-spacer {
   background-color: red !important;
+}
+
+.editor-styles-wrapper .wp-block {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90% !important;
+  max-width: 90% !important;
 }/*# sourceMappingURL=go-admin.css.map */
