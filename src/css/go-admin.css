@@ -356,11 +356,6 @@ body.active {
   justify-content: center;
   gap: 10px;
 }
-@media only screen and (max-width: 768px) {
-  .rank-math-breadcrumb p {
-    justify-content: flex-start;
-  }
-}
 .rank-math-breadcrumb a {
   text-decoration: none;
   font-size: 16px;

@@ -251,9 +251,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    @media #{$sm} {
-      justify-content: flex-start;
-    }
   }
   a {
     text-decoration: none;
