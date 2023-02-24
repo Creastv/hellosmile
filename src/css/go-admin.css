@@ -115,6 +115,7 @@ body.active {
   .posts-wraper .post-item {
     width: 100%;
     margin-bottom: 0px;
+    padding: 0px;
   }
 }
 .posts-wraper .entry-content {
@@ -375,6 +376,14 @@ body.active {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 768px) {
+  .kk-ata {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .kk-ata .kk-ata__wraper span {
   display: block;
   font-size: 12px;
@@ -419,6 +428,7 @@ body.active {
   text-decoration: none;
   transition: 0.1s linear;
   font-weight: 400;
+  text-align: center;
   display: inline-block;
 }
 .btn:hover {
@@ -492,10 +502,17 @@ body.active {
 
 .b-header__wraper .btn {
   font-size: 21px;
-  margin-bottom: 50px;
+  margin: 20px 0 50px 0;
+}
+@media only screen and (max-width: 998px) {
+  .b-header__wraper .btn {
+    margin: 20px 0;
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .b-header__wraper .btn {
+    margin: 20px 0;
     font-size: 16px;
   }
 }

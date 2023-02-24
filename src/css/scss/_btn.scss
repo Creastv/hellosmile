@@ -7,6 +7,7 @@
   text-decoration: none;
   transition: 0.1s linear;
   font-weight: 400;
+  text-align: center;
   display: inline-block;
   &:hover {
     box-shadow: 0 0 10px 0 rgb(64, 64, 64, 0.43);
@@ -75,8 +76,13 @@
 .b-header__wraper {
   .btn {
     font-size: 21px;
-    margin-bottom: 50px;
+    margin: 20px 0 50px 0;
+    @media #{$md} {
+      margin: 20px 0;
+      font-size: 18px;
+    }
     @media #{$sm} {
+      margin: 20px 0;
       font-size: 16px;
     }
   }

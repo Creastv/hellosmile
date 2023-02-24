@@ -1,6 +1,7 @@
 (window.load = function (event) {
   const togglerNav = document.querySelector(".js-navbar__toggler");
   const nav = document.querySelector(".js-navbar__navigation");
+  const heightHeader = document.querySelector("#header");
   let navFlag = false;
 
   togglerNav.addEventListener("click", () => {
@@ -17,6 +18,7 @@
     }
     loadItemsNav();
   });
+
   function loadItemsNav() {
     const li = [...document.querySelectorAll(".js-header-nav-list li")];
     let index = 0;
@@ -28,6 +30,7 @@
       }, 150);
     }, 0);
   }
+
   // Close after click the navmenu on mobile
   const itemsNAv = document.querySelectorAll(".js-navbar__navigation a");
   for (let i = 0; i < itemsNAv.length; i++) {
@@ -37,6 +40,7 @@
       navFlag = false;
     });
   }
+
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
   goToTop.addEventListener("click", () => {
@@ -49,26 +53,19 @@
       goToTop.classList.remove("active");
     }
   });
+
   // sticy nabvbar
   const navbar = document.querySelector("#header");
   document.addEventListener("scroll", () => {
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (window.pageYOffset) {
       navbar.classList.add("active");
+      document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
     } else {
       navbar.classList.remove("active");
+      document.querySelector("body").style.paddingTop = "0";
     }
   });
-
-  // set body padding top by geting header height
-  // function heightHeader() {
-  //   const heightHeader = document.querySelector("#header");
-  //   document.querySelector("body").style.paddingTop = heightHeader.clientHeight + "px";
-  // }
-  // window.addEventListener("resize", heightHeader);
-  // heightHeader();
-
-  //   // scroll to section
   // footer
   const calaps = document.querySelectorAll(".calaps");
   console.log(calaps);

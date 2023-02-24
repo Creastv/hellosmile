@@ -8,6 +8,7 @@
     @media #{$sm} {
       width: 100%;
       margin-bottom: 0px;
+      padding: 0px;
     }
   }
   .entry-content {
@@ -273,6 +274,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media #{$sm} {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
   .kk-ata__wraper {
     span {
       display: block;
