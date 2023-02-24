@@ -259,6 +259,13 @@ body {
   padding: 10px 50px 10px 20px;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .faq .accordion .question span {
+    width: 100%;
+    padding: 10px 50px 10px 0;
+    position: relative;
+  }
+}
 .faq .accordion .question span:after {
   content: "+";
   position: absolute;

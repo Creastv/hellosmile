@@ -38,6 +38,11 @@
         width: calc(100% - 24px);
         padding: 10px 50px 10px 20px;
         position: relative;
+        @media #{$sm} {
+          width: 100%;
+          padding: 10px 50px 10px 0;
+          position: relative;
+        }
         &:after {
           content: "+";
           position: absolute;
