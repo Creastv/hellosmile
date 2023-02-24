@@ -74,6 +74,10 @@
   @media #{$sm} {
     display: none;
   }
+  a {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
 }
 
 // swicher + panel pacienta
@@ -319,4 +323,128 @@
       }
     }
   }
+}
+
+// blog page title
+.taxonomy-description {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.i-header {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  // margin-bottom: 50px;
+  .i-header__wraper {
+    display: flex;
+    align-items: center;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+    .col {
+      width: 50%;
+      position: relative;
+      @media #{$sm} {
+        width: 100%;
+      }
+      &:nth-child(1) {
+        padding: 30px 100px 30px 0px;
+      }
+      &:nth-child(2) {
+        align-self: stretch;
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+      .img {
+        align-self: stretch;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        min-height: 480px;
+        height: 100%;
+        @media #{$sm} {
+          height: initial;
+          min-height: 300px;
+        }
+        img {
+          max-height: 650px;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          display: block;
+          -o-object-fit: cover;
+          object-fit: cover;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+.i-header__excerpt {
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+  > div {
+    width: 50%;
+    @media #{$sm} {
+      width: 100%;
+    }
+  }
+  .i-header__excerpt__wraper {
+    background-color: #fff;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 20px;
+    width: 35%;
+    transform: translate(calc(-28% + -100px), -50%);
+    position: relative;
+    z-index: 5;
+    @media #{$sm} {
+      width: 100%;
+      transform: translate(0, 0);
+    }
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @media #{$md} {
+        flex-wrap: wrap;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        width: 70%;
+        @media #{$md} {
+          width: 100%;
+        }
+      }
+      .btn-rev {
+        text-align: center;
+        width: 30%;
+        padding: 5px 11px;
+        font-size: 14px;
+        display: block;
+        @media #{$md} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.o-smile {
+  position: absolute;
+  bottom: -70px;
+  right: 50px;
+  z-index: 2;
 }

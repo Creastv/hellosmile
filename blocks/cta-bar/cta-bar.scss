@@ -1,0 +1,72 @@
+@import "../../src/css/scss/variable";
+@import "../../src/css/scss/btn";
+
+.b-cta-bar {
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  br {
+    @media #{$sm} {
+      display: none;
+    }
+  }
+
+  .btn-cta-bar__wraper {
+    display: flex;
+    align-items: center;
+    @media #{$md} {
+      flex-wrap: wrap;
+    }
+    .col {
+      &:nth-child(1) {
+        flex: auto;
+      }
+      &:nth-child(2) {
+        @media #{$md} {
+          width: 100%;
+          text-align: right;
+        }
+        @media #{$xs} {
+          text-align: center;
+        }
+      }
+      .title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+      .btn {
+        font-size: 16px;
+        padding: 10px 25px;
+        white-space: nowrap;
+
+        @media #{$md} {
+          margin: 20px 0 0 0;
+        }
+        @media #{$xs} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.b-cta-bar--main {
+  background-color: $main;
+  * {
+    color: #fff;
+  }
+  .btn {
+    border: 1px solid #fff;
+  }
+}
+.b-cta-bar--revers {
+  border: 1px solid $main;
+}

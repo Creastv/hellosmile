@@ -1,10 +1,15 @@
+<?php 
+$left = get_field( 'lewo', 'options' );
+$right = get_field( 'prawo', 'options' );
+
+?>
 <div class="f__info">
     <div class="f__info__wraper">
         <div class="col">
-            <p><small>HELLO SMILE © 2020. All rights reserved. </small></p>
+            <p><small><?php echo $left; ?></small></p>
         </div>
         <div class="col">
-            <p><small>Projekt i wykonanie: Roial.pl</small></p>
+            <p><small><?php echo $right; ?></small></p>
         </div>
     </div>
 </div>

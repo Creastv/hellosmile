@@ -96,7 +96,7 @@ $filmik = get_field( 'filmik' );
     </div>
 </div>
 
-
+<?php if($video) { ?>
 <!-- modal -->
 <div class="mod-bg">
     <div class="mod-container">
@@ -140,3 +140,4 @@ for (let i = 0; i < display.length; i++) {
 // display.addEventListener('click', displayModal);
 close.addEventListener('click', displayModal);
 </script>
+<?php } ?>

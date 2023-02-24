@@ -1,3 +1,12 @@
+.b-vote-bar {
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  .prove-bar {
+    transform: translate(0px, 0px) !important;
+  }
+}
 .prove-bar {
   position: relative;
   z-index: 55;
@@ -33,7 +42,7 @@
     background-color: #fff;
     padding: 20px 50px;
     border-radius: 6px;
-    box-shadow: 0px 0px 70px #0000000a;
+    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 50px;
@@ -65,6 +74,7 @@
     .opi {
       font-size: 14px;
       color: #a7a7a7;
+      white-space: nowrap;
     }
     .line {
       position: relative;

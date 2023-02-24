@@ -22,6 +22,7 @@ require get_template_directory() . '/blocks/blocks.php';
 function add_block_editor_assets(){
   wp_enqueue_style('block_editor_css', get_template_directory_uri().'/src/css/go-admin.min.css');
 }
+add_action('enqueue_block_editor_assets','add_block_editor_assets',10,0);
 // Paginacja
 function pagination_bars() {
     global $wp_query;
@@ -98,3 +99,10 @@ add_filter('acf_icon_path_suffix',
   }
 );
 
+function wpsites_exclude_latest_post( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'offset', '1' );
+    }
+}
+ 
+add_action( 'pre_get_posts', 'wpsites_exclude_latest_post', 1 );

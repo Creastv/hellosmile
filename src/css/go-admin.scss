@@ -4,15 +4,25 @@
 @import "scss/single";
 @import "scss/archive";
 @import "scss/page";
+@import "scss/btn";
 
 @import "scss/parts/parts";
 .wp-block-spacer {
   background-color: red !important;
 }
 
-.editor-styles-wrapper .wp-block {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90% !important;
-  max-width: 90% !important;
+.wp-block {
+  max-width: 90%;
+}
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+  max-width: 100%;
+}
+/* Width of "full-width" blocks */
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+html :where(.wp-block)[data-align="right"] > * {
+  float: none !important;
 }

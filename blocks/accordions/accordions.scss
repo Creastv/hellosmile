@@ -4,25 +4,23 @@
 
 .faq__wraper {
   display: flex;
-  gap: 20px;
+  margin-bottom: 50px;
   @media #{$sm} {
-    flex-wrap: wrap;
-    gap: 0;
+    margin-bottom: 30px;
   }
   .col {
-    width: calc(50% - 20px);
-    @media #{$sm} {
-      width: 100%;
-    }
+    width: 100%;
   }
 }
 .faq {
   .accordion {
-    margin-bottom: 24px;
-    border: 2px solid $main;
+    border-top: 1px solid $light;
+    border-bottom: 1px solid $light;
+    margin-top: -1px;
     .question {
       font-size: 18px;
-      line-height: 26px;
+      line-height: 22px;
+      font-weight: 600;
       position: relative;
       display: flex;
       align-items: center;
@@ -41,16 +39,14 @@
         padding: 10px 50px 10px 20px;
         position: relative;
         &:after {
-          content: "";
-          background-image: url(../../src/img/acco-arrow.png);
-          width: 21px;
-          height: 13px;
+          content: "+";
           position: absolute;
           top: 50%;
           transform: translate(0, -50%);
           right: 15px;
           display: block;
-          font-size: 24px !important;
+          font-size: 64px !important;
+          font-weight: 300;
           color: $main;
         }
       }
@@ -65,28 +61,23 @@
       border-radius: 6px;
       height: 0;
       overflow: hidden;
-      .wrap-video {
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        iframe {
-          border: 0;
-          height: 100%;
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 100%;
-        }
-      }
     }
   }
   .accordion.active {
-    // background-color: $light;
-    background-color: rgba(259, 259, 259, 1);
+    transition: all 0.1s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 6px;
+    z-index: 1;
+    background-color: #f6f6f6;
+    border: 1px solid $main;
+
     .question {
-      //   border-bottom: 1px solid $main;
-      svg {
-        transform: rotate(180deg);
+      border-bottom: 1px solid #e7e7e7;
+      span {
+        &:after {
+          content: "-";
+        }
       }
     }
     .answer {
