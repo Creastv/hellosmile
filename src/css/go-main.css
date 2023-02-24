@@ -133,6 +133,10 @@ body {
   overflow-x: hidden;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 #main {
   margin-bottom: 50px;
 }
@@ -652,9 +656,12 @@ body {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 1300px) {
   .navbar__navigation > ul li a {
-    font-size: 18px;
+    display: block;
+    padding: 20px;
+    padding: 10px 0 !important;
+    font-size: 21px;
     color: #fff;
   }
 }
@@ -682,9 +689,6 @@ body {
 }
 .navbar__navigation.active > ul li {
   transition: all 0.4s linear;
-}
-.navbar__navigation.active > ul li a {
-  padding: 0 !important;
 }
 .navbar__navigation.active .sub-menu {
   box-shadow: none;

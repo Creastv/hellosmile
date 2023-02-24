@@ -7,13 +7,12 @@
     if (navFlag == false) {
       nav.classList.add("active");
       togglerNav.classList.add("active");
-      document.querySelector("body").style.overflow = "hidden";
+      document.querySelector("body").classList.add("active");
       navFlag = true;
     } else {
       nav.classList.remove("active");
       togglerNav.classList.remove("active");
-      document.querySelector("body").style.overflow = "inherit";
-      // document.querySelector(".js-header").classList.remove("active");
+      document.querySelector("body").classList.remove("active");
       navFlag = false;
     }
     loadItemsNav();

@@ -133,6 +133,10 @@ body {
   overflow-x: hidden;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 #main {
   margin-bottom: 50px;
 }

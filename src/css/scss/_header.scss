@@ -139,8 +139,11 @@
         @media #{$xlg} {
           font-size: 15px;
         }
-        @media #{$md} {
-          font-size: 18px;
+        @media #{$lg} {
+          display: block;
+          padding: 20px;
+          padding: 10px 0 !important;
+          font-size: 21px;
           color: #fff;
         }
         &:hover {
@@ -175,9 +178,6 @@
 
     li {
       transition: all 0.4s linear;
-      a {
-        padding: 0 !important;
-      }
     }
   }
   .sub-menu {
