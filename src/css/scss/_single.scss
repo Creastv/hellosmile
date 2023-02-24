@@ -176,6 +176,9 @@
     .hr {
       border-top: 1px solid $light;
       margin-bottom: 50px;
+      @media #{$sm} {
+        margin-bottom: 30px;
+      }
     }
   }
 }
