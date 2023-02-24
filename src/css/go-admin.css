@@ -111,6 +111,11 @@ body.active {
   width: 33.333333%;
   padding: 20px;
 }
+@media only screen and (max-width: 998px) {
+  .posts-wraper .post-item {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .posts-wraper .post-item {
     width: 100%;
@@ -173,9 +178,15 @@ body.active {
   justify-content: space-between;
   padding: 20px 10px;
 }
+@media only screen and (max-width: 1500px) {
+  .post-item .content {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 998px) {
   .post-item .content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -193,13 +204,14 @@ body.active {
   display: inline-block;
   white-space: nowrap;
   font-size: 14px;
-  padding: 10px 20px;
-  margin: 20px 0;
+  padding: 5px 15px;
+  margin: 15px 0;
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
   .post-item .content .btn-rev {
     padding: 5px 15px;
+    margin: 0 0 10px 0;
   }
 }
 .post-item h2 {
@@ -207,6 +219,14 @@ body.active {
   line-height: 27px;
   font-weight: 600;
   padding-right: 30px;
+}
+@media only screen and (max-width: 1500px) {
+  .post-item h2 {
+    width: 100%;
+    padding-right: 0px;
+    font-size: 19px;
+    line-height: 25px;
+  }
 }
 @media only screen and (max-width: 998px) {
   .post-item h2 {
@@ -230,6 +250,17 @@ body.active {
 }
 .post-item h2 a:hover {
   color: #575289;
+}
+@media only screen and (max-width: 1500px) {
+  .post-item .content__btn {
+    width: 100%;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .post-item .content__btn a {
+    margin: 10px 0;
+  }
 }
 
 .single-post .t-page-wraper {
