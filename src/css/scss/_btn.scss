@@ -7,7 +7,6 @@
   text-decoration: none;
   transition: 0.1s linear;
   font-weight: 400;
-  font-size: 21px;
   display: inline-block;
   &:hover {
     box-shadow: 0 0 10px 0 rgb(64, 64, 64, 0.43);
@@ -18,7 +17,7 @@
     border: 1px solid #fff;
   }
   @media #{$sm} {
-    font-size: 18px;
+    // font-size: 18px;
     padding: 10px 25px;
   }
 }
@@ -30,7 +29,6 @@
   text-decoration: none;
   transition: 0.1s linear;
   font-weight: 400;
-  font-size: 21px;
   display: inline-block;
   &:hover {
     background-color: $main;
@@ -43,7 +41,6 @@
     border: 1px solid #fff;
   }
   @media #{$sm} {
-    font-size: 18px;
     padding: 10px 25px;
   }
 }
@@ -67,4 +64,20 @@
 .btn-wrap {
   display: block;
   margin: 30px 0;
+  > a {
+    font-size: 21px;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+  }
+}
+
+.b-header__wraper {
+  .btn {
+    font-size: 21px;
+    margin-bottom: 50px;
+    @media #{$sm} {
+      font-size: 16px;
+    }
+  }
 }

@@ -29,6 +29,7 @@
     @media #{$sm} {
       width: 100%;
       margin-bottom: 0px;
+      padding: 0px;
     }
     footer {
       @media #{$xlg} {
@@ -82,6 +83,9 @@
       padding: 10px 20px;
       margin: 20px 0;
       display: inline-block;
+      @media #{$sm} {
+        padding: 5px 15px;
+      }
     }
   }
   h2 {
@@ -94,6 +98,7 @@
     }
     @media #{$sm} {
       padding-right: 20px;
+      margin: 10px 0;
     }
     @media #{$xs} {
       padding-right: 0px;

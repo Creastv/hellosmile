@@ -53,6 +53,22 @@
     }
   }
   .score-bar__item {
+    &:nth-child(1) {
+      @media #{$sm} {
+        order: 1;
+      }
+    }
+    &:nth-child(2) {
+      @media #{$sm} {
+        order: 3;
+        width: 100%;
+      }
+    }
+    &:nth-child(3) {
+      @media #{$sm} {
+        order: 2;
+      }
+    }
     @media #{$sm} {
       width: calc(50% - 10px);
     }
@@ -88,6 +104,13 @@
         height: 100%;
         width: 90%;
         background-color: $main2;
+      }
+    }
+    .stars {
+      svg {
+        @media #{$sm} {
+          width: 80px;
+        }
       }
     }
     .stars.four {

@@ -110,7 +110,7 @@
     display: flex;
     align-items: center;
     @media #{$lg} {
-      position: absolute;
+      position: fixed;
       top: 0px;
       right: -100%;
       display: block !important;
@@ -169,12 +169,10 @@
   > ul {
     transition: all 0.1s linear;
     // right: -8% !important;
-    right: -50px !important;
+    right: 0px !important;
     padding-right: 30px;
     border: none;
-    @media #{$sm} {
-      right: -30px !important;
-    }
+
     li {
       transition: all 0.4s linear;
       a {

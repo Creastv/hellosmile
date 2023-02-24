@@ -88,9 +88,6 @@
     font-size: 16px;
   }
 }
-.b-header .b-header__wraper .col .btn {
-  margin-bottom: 50px;
-}
 .b-header .b-header__wraper .col-full {
   width: 100%;
   padding: 0 !important;
