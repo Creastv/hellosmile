@@ -67,7 +67,7 @@ function register_acf_block_types() {
           wp_enqueue_style( 'go-cta-bar',  get_template_directory_uri() . '/blocks/cta-bar/cta-bar.min.css' );
       },
     ));
-        acf_register_block_type(array(
+    acf_register_block_type(array(
         'name'              => 'vote-bar',
         'title'             => __('Vote - bar'),
         'render_template'   => 'blocks/vote-bar/vote-bar.php',
@@ -82,6 +82,29 @@ function register_acf_block_types() {
       'supports' => array( 'align' =>false ),
       'enqueue_assets'    => function(){
           wp_enqueue_style( 'go-vote',  get_template_directory_uri() . '/blocks/vote/vote.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+        'name'              => 'sticky-sidebar',
+        'title'             => __('Sticky sidebar'),
+        'render_template'   => 'blocks/sticky-sidebar/sticky-sidebar.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'sticky-sidebar' ),
+       'supports'		=> [
+          'align'			=> false,
+          'anchor'		=> false,
+          'customClassName'	=> false,
+          'jsx' 			=> true,
+        ],
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-vote',  get_template_directory_uri() . '/blocks/sticky-sidebar/sticky-sidebar.min.css' );
       },
     ));
     

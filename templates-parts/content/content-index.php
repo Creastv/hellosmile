@@ -1,6 +1,6 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('post-item'); ?>>
     <header>
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post'); ?></a>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-item'); ?></a>
         <div class="meta-group">
             <div class="meta meta-category">
                 <span><?php _e(' Kat: ', 'go' ); ?></span>

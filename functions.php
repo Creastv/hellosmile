@@ -1,6 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_image_size( 'licytacja', 220, 220, array( 'center', 'center' ) );
+add_image_size( 'post-item', 450, 300, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'go_register_nav_menu' ) ) {
     function go_register_nav_menu(){
@@ -99,10 +100,10 @@ add_filter('acf_icon_path_suffix',
   }
 );
 
-function wpsites_exclude_latest_post( $query ) {
-    if ( $query->is_home() && $query->is_main_query() ) {
-        $query->set( 'offset', '1' );
-    }
-}
+// function wpsites_exclude_latest_post( $query ) {
+//     if ( $query->is_home() && $query->is_main_query() ) {
+//         $query->set( 'offset', '1' );
+//     }
+// }
  
-add_action( 'pre_get_posts', 'wpsites_exclude_latest_post', 1 );
+// add_action( 'pre_get_posts', 'wpsites_exclude_latest_post', 1 );
