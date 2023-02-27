@@ -5,11 +5,11 @@ $nav = get_field( 'navigacja' );
     <div class="container">
         <div class="row">
             <div class="b-sticky-con__wraper">
-                <div class="col">
+                <div class="col-1">
                     <InnerBlocks />
                 </div>
                 <?php if($nav) { ?>
-                <div class="col">
+                <div class="col-1">
                     <div class="sticky-nav">
                         <nav>
                             <ul>

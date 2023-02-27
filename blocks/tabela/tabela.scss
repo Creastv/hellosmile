@@ -1,0 +1,42 @@
+@import "../../src/css/scss/variable";
+
+.b-table--dlaczego-waro {
+  width: 100%;
+  overflow: auto;
+  padding: 30px 0px;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  td {
+    border-bottom: 1px solid $main2;
+    padding: 10px;
+  }
+  tr {
+    th {
+      padding: 20px;
+      border-bottom: 1px solid $main2;
+      &:nth-child(2) {
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+        background-color: $main2;
+      }
+    }
+    td {
+      width: 25%;
+      text-align: center;
+      &:nth-child(1) {
+        font-size: 14px;
+        text-align: left;
+      }
+      &:nth-child(2) {
+        background-color: $main2;
+        svg {
+          path {
+            fill: $main;
+          }
+        }
+      }
+    }
+  }
+}

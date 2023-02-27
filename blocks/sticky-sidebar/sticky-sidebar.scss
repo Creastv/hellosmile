@@ -23,16 +23,27 @@
   .b-sticky-con__wraper {
     display: flex;
     align-items: stretch;
-    gap: 50px;
-
-    .col {
+    gap: 100px;
+    @media #{$lg} {
+      gap: 50px;
+    }
+    @media #{$md} {
+      flex-wrap: wrap;
+    }
+    .col-1 {
       &:nth-child(2) {
         width: 25%;
         order: 1;
+        @media #{$md} {
+          width: 100%;
+        }
       }
       &:nth-child(1) {
         width: 75%;
         order: 2;
+        @media #{$md} {
+          width: 100%;
+        }
       }
     }
   }
@@ -53,6 +64,7 @@
           display: block;
           font-size: 16px;
           line-height: 22px;
+          margin-bottom: 20px;
           text-decoration: none;
           color: $black;
           &:hover {

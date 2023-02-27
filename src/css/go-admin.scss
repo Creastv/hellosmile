@@ -8,7 +8,7 @@
 
 @import "scss/parts/parts";
 .wp-block-spacer {
-  background-color: red !important;
+  background-color: #eeeef0 !important;
 }
 
 .wp-block {
@@ -25,4 +25,14 @@
 
 html :where(.wp-block)[data-align="right"] > * {
   float: none !important;
+}
+
+html :where(.wp-block)[data-align="left"] > * {
+  float: none !important;
+}
+
+html :where(.wp-block)[data-align="left"],
+html :where(.wp-block)[data-align="right"] {
+  width: 100%;
+  height: initial !important;
 }

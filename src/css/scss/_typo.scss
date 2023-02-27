@@ -40,7 +40,7 @@ a {
   transition: all 0.1s linear;
 }
 .entry-content {
-  max-width: 900px;
+  max-width: 1114px;
   margin: 0 auto;
   width: 100%;
   ul,
@@ -104,4 +104,10 @@ a {
       }
     }
   }
+}
+
+.sticky-element {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
 }

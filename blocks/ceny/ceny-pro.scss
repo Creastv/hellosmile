@@ -1,0 +1,55 @@
+@import "../../src/css/scss/variable";
+
+.b-ceny-pro {
+  .b-ceny-pro__wraper {
+    .b-ceny-pro__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px dashed #808080;
+      margin-bottom: 20px;
+      padding: 20px 0;
+      gap: 50px;
+      @media #{$sm} {
+        flex-wrap: wrap;
+        gap: 0px;
+      }
+      .item__nazwa {
+        h3 {
+          font-size: 21px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .item__cena {
+        background-color: #f6f6f6;
+        border: 1px solid #eeeef0;
+        border-radius: 6px;
+        padding: 20px;
+        min-width: 200px;
+        text-align: center;
+        flex: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 5px;
+        span {
+          font-weight: 700;
+          color: $main;
+          display: block;
+          &:nth-child(1) {
+            font-size: 31px;
+            line-height: 31px;
+            font-weight: 700;
+          }
+          &:nth-child(2) {
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -44,7 +44,7 @@ a {
 }
 
 .entry-content {
-  max-width: 900px;
+  max-width: 1114px;
   margin: 0 auto;
   width: 100%;
 }
@@ -115,6 +115,11 @@ a {
   }
 }
 
+.sticky-element {
+  position: sticky;
+  top: 100px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -142,7 +147,7 @@ body.active {
 }
 
 .container {
-  max-width: 1555px;
+  max-width: 1380px;
   width: 100%;
   margin: 0 auto;
 }

@@ -1,0 +1,51 @@
+@import "../../src/css/scss/variable";
+
+.b-kolumny {
+  .b-kolumny__wraper {
+    display: flex;
+    gap: 50px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+    .col {
+      width: 50%;
+      @media #{$sm} {
+        width: 100%;
+      }
+      &:nth-child(1) {
+        align-self: center;
+      }
+      img {
+        width: 100%;
+        height: auto;
+
+        position: -webkit-sticky;
+        position: sticky;
+        top: 100px;
+      }
+    }
+  }
+  .left {
+    .col {
+      &:nth-child(1) {
+        order: 2;
+        @media #{$sm} {
+          order: 1;
+        }
+      }
+      &:nth-child(2) {
+        order: 1;
+        @media #{$sm} {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+.b-kolumny.full {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+}

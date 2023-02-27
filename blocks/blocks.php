@@ -51,6 +51,184 @@ function register_acf_block_types() {
       'keywords'          => array( 'btn' ),
     ));
 
+    acf_register_block_type(array(
+      'name'              => 'tytul',
+      'title'             => __('Tytuł'),
+      'render_template'   => 'blocks/tytul/tytul.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'tytul' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-tytul',  get_template_directory_uri() . '/blocks/tytul/tytul.min.css' );
+      },
+    ));
+
+     acf_register_block_type(array(
+      'name'              => 'tabela',
+      'title'             => __('Tabela - dlaczego warto'),
+      'render_template'   => 'blocks/tabela/tabela.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'tabela' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-tabela',  get_template_directory_uri() . '/blocks/tabela/tabela.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'kolumny',
+      'title'             => __('Sekcja 50/50 - Image'),
+      'render_template'   => 'blocks/kolumny/kolumny.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'supports'		=> [
+          'align'			=> false,
+          'anchor'		=> false,
+          'customClassName'	=> false,
+          'jsx' 			=> true,
+        ],
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Kolumny' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-kolumny',  get_template_directory_uri() . '/blocks/kolumny/kolumny.min.css' );
+      },
+    ));
+
+     acf_register_block_type(array(
+      'name'              => 'ceny',
+      'title'             => __('Ceny - nakładki'),
+      'render_template'   => 'blocks/ceny/ceny-nakladki.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Ceny' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-ceny',  get_template_directory_uri() . '/blocks/ceny/ceny.min.css' );
+      },
+    ));
+
+     acf_register_block_type(array(
+      'name'              => 'kroki',
+      'title'             => __('3 kroki'),
+      'render_template'   => 'blocks/kroki/kroki.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'kroki' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-kroki',  get_template_directory_uri() . '/blocks/kroki/kroki.min.css' );
+      },
+    ));
+
+     acf_register_block_type(array(
+      'name'              => 'ceny-pro',
+      'title'             => __('Ceny - produktów'),
+      'render_template'   => 'blocks/ceny/ceny-pro.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Ceny' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-ceny-pro',  get_template_directory_uri() . '/blocks/ceny/ceny-pro.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'ceny-nakladek-sekcja',
+      'title'             => __('Ceny - sekcja - ceny nakładek'),
+      'render_template'   => 'blocks/ceny/ceny-sekcja.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Ceny' ),
+      'enqueue_assets'    => function(){
+        wp_enqueue_style( 'go-ceny',  get_template_directory_uri() . '/blocks/ceny/ceny.min.css' );
+        wp_enqueue_style( 'go-ceny-sekcja',  get_template_directory_uri() . '/blocks/ceny/ceny-sekcja.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'nakladki-vs-aparat',
+      'title'             => __('Nakładki vs Aparat'),
+      'render_template'   => 'blocks/nakladki-vs-aparat/n-vs-a.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Nakładki vs aparat' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-n-vs-a',  get_template_directory_uri() . '/blocks/nakladki-vs-aparat/n-vs-a.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'zalety',
+      'title'             => __('Zalety'),
+      'render_template'   => 'blocks/zalety/zalety.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'zalety' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-zalety',  get_template_directory_uri() . '/blocks/zalety/zalety.min.css' );
+      },
+    ));
+
+     acf_register_block_type(array(
+      'name'              => 'proces',
+      'title'             => __('Proces Leczenia'),
+      'render_template'   => 'blocks/proces/proces.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'proces' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-proces',  get_template_directory_uri() . '/blocks/proces/proces.min.css' );
+      },
+    ));
+
+
      acf_register_block_type(array(
       'name'              => 'cta-bar',
       'title'             => __('CTA-bar'),

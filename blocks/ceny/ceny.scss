@@ -1,0 +1,81 @@
+@import "../../src/css/scss/variable";
+
+.b-ceny-nakladek {
+  .b-ceny-nakladek__wraper {
+    .b-ceny-nakladek__item {
+      border-radius: 6px;
+      margin-bottom: 15px;
+      background-color: #f6f6f6;
+      border: 1px solid #eeeef0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media #{$xs} {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      .nazwa {
+        @media #{$xs} {
+          width: 100%;
+          text-align: center;
+        }
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 30px;
+          @media #{$lg} {
+            font-size: 24px;
+          }
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          font-size: 14px;
+          color: $light-black;
+          @media #{$lg} {
+            font-size: 10px;
+          }
+        }
+      }
+      .cena {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media #{$lg} {
+          gap: 10px;
+        }
+        @media #{$xs} {
+          width: 100%;
+          justify-content: center;
+        }
+        .numer {
+          font-size: 46px;
+          font-weight: 700;
+          color: $main;
+          @media #{$lg} {
+            font-size: 30px;
+          }
+        }
+        .sufix {
+          span {
+            display: block;
+            font-size: 14px;
+            &:nth-child(1) {
+              font-weight: 700;
+              color: $main;
+              font-size: 16px;
+            }
+            &:nth-child(2) {
+              @media #{$lg} {
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

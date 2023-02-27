@@ -1,0 +1,35 @@
+.b-proces-l .b-proces-l__wraper ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.b-proces-l .b-proces-l__wraper ul:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 8px;
+  height: 100%;
+  background: rgb(157, 247, 222);
+  background: linear-gradient(0deg, rgb(157, 247, 222) 0%, rgb(255, 255, 255) 100%);
+  left: 31px;
+}
+.b-proces-l .b-proces-l__wraper ul li {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px dashed #808080;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.b-proces-l .b-proces-l__wraper ul li .b-proces__step {
+  font-size: 21px;
+  font-weight: 600;
+  color: #575289;
+  background-color: #fff;
+  padding: 10px 30px;
+}
+.b-proces-l .b-proces-l__wraper ul li .b-proces__desc h3 {
+  font-size: 21px;
+}
+.b-proces-l .b-proces-l__wraper ul li .b-proces__desc p {
+  font-size: 16px;
+}/*# sourceMappingURL=proces.css.map */

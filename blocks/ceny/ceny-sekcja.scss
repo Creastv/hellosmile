@@ -1,0 +1,45 @@
+@import "../../src/css/scss/variable";
+
+.b-ceny-n-sekcja {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+
+  .b-ceny-n-sekcja__wraper {
+    .row {
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+      @media #{$sm} {
+        flex-wrap: wrap;
+      }
+      .col {
+        width: 50%;
+        position: relative;
+        @media #{$sm} {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          align-self: center;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        svg {
+          position: absolute;
+          bottom: -80px;
+          right: 30px;
+          height: 200px;
+        }
+        .btn-wrap {
+          text-align: center;
+          a {
+            font-size: initial;
+          }
+        }
+      }
+    }
+  }
+}

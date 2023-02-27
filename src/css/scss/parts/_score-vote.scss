@@ -36,6 +36,9 @@
   justify-content: center;
   // margin: 0 auto;
   // transform: translate(0px, -50px);
+  // @media #{$md} {
+  //   width: 100%;
+  // }
 
   .scroe-bar__wraper {
     // max-width: 745px;
@@ -46,6 +49,9 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    // @media #{$md} {
+    //   width: 100%;
+    // }
     @media #{$sm} {
       flex-wrap: wrap;
       gap: 10px;
