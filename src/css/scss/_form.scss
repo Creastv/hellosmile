@@ -1,8 +1,7 @@
-.form-contact {
-  // padding: 0 40px;
-  @media #{$md} {
-    padding: 30px 0;
-  }
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 .form-group {
   position: relative;
@@ -13,13 +12,13 @@
     min-height: 55px;
     height: 100%;
     padding: 10px;
-    border: 1px solid #fff !important;
-    color: #fff;
-    background: none;
+    background-color: #fff;
+    border-radius: 6px;
     border: 0;
+    border-bottom: 2px solid $main !important;
   }
   ::placeholder {
-    color: #fff !important;
+    // color: #fff !important;
   }
   .wpcf7-form-control-wrap {
     width: 100%;
@@ -27,41 +26,57 @@
     padding-bottom: 15px;
   }
 }
-.form-group.text-right {
+.form-row {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
 }
-.select2-container--default .select2-selection--multiple {
+.col-1 {
   width: 100%;
-  min-height: 55px;
-  padding: 10px;
-  border: 0px !important;
-  border-radius: 0px !important;
-  background-color: $light !important;
 }
-.wpcf7-acceptance {
-  label {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    input {
-      width: 50px;
-    }
-    .wpcf7-list-item-label {
-      font-size: 12px;
-      line-height: 17px;
-    }
+.col-2 {
+  width: 50%;
+  @media #{$sm} {
+    width: 100%;
   }
 }
 
+.form-group.checkbox {
+  width: 70%;
+  @media #{$sm} {
+    width: 100%;
+  }
+  label {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+  input {
+    width: 20px;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+.btn-form {
+  width: 30%;
+  @media #{$sm} {
+    width: 100%;
+  }
+}
 .wpcf7-submit {
-  margin: 15px;
-  background: none;
+  margin: 15px 25px;
+  background: $main;
   border: 1px solid $main;
-  color: $main;
+  border-radius: 100px;
+  color: #fff;
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
+  width: 100%;
+  @media #{$sm} {
+    width: 100%;
+    display: block;
+  }
   &:hover {
     background-color: $main;
     color: #fff;

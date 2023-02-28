@@ -38,6 +38,24 @@ function register_acf_block_types() {
     ));
 
     acf_register_block_type(array(
+        'name'              => 'faq-form',
+        'title'             => __('FAQ form'),
+        'render_template'   => 'blocks/faq-form/faq-form.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Faq form' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-faq-form',  get_template_directory_uri() . '/blocks/faq-form/faq-form.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
       'name'              => 'btn',
       'title'             => __('Btn'),
       'render_template'   => 'blocks/btn/btn.php',
@@ -258,9 +276,6 @@ function register_acf_block_types() {
       'mode'            => 'preview', 
       'keywords'          => array( 'Vote' ),
       'supports' => array( 'align' =>false ),
-      'enqueue_assets'    => function(){
-          wp_enqueue_style( 'go-vote',  get_template_directory_uri() . '/blocks/vote/vote.min.css' );
-      },
     ));
 
     acf_register_block_type(array(
