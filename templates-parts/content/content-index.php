@@ -3,7 +3,7 @@
         <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-item'); ?></a>
         <div class="meta-group">
             <div class="meta meta-category">
-                <span><?php _e(' Kat: ', 'go' ); ?></span>
+                <span><?php _e(' Kategoria: ', 'go' ); ?></span>
                 <?php the_category();?>
             </div>
             <div class="meta meta-pub">
