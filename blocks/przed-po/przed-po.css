@@ -9,4 +9,9 @@
 .b-przed-po .b-przed-po__wraper .b-przed-po__item img {
   width: 100%;
   height: auto;
+}
+
+.acf-block-preview .b-przed-po__wraper .swiper-slide {
+  width: 25%;
+  padding: 10px;
 }/*# sourceMappingURL=przed-po.css.map */
