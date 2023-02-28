@@ -1,6 +1,10 @@
 @import "../../src/css/scss/variable";
 
 .b-ceny-pro {
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
   .b-ceny-pro__wraper {
     .b-ceny-pro__item {
       display: flex;

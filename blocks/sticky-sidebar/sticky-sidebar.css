@@ -54,11 +54,17 @@
   position: sticky;
   top: 100px;
 }
+@media only screen and (max-width: 998px) {
+  .sticky-nav {
+    display: none;
+  }
+}
 .sticky-nav nav ul {
   list-style: none;
   padding: 0;
 }
 .sticky-nav nav ul li {
+  position: relative;
   display: block;
   width: 100%;
 }
@@ -71,5 +77,22 @@
   color: #0d0b1e;
 }
 .sticky-nav nav ul li a:hover {
+  font-weight: 700;
+}
+.sticky-nav nav ul .active {
+  position: relative;
+  padding-left: 15px;
+}
+.sticky-nav nav ul .active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../../src/img/corner-mark.png);
+  width: 13px;
+  height: 13px;
+  top: -5px;
+  left: 5px;
+}
+.sticky-nav nav ul .active a {
   font-weight: 700;
 }/*# sourceMappingURL=sticky-sidebar.css.map */

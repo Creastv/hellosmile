@@ -4,7 +4,10 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
   .container-fluid {
     .row {
       padding-right: 0px;

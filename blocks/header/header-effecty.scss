@@ -1,0 +1,102 @@
+@import "../../src/css/scss/variable";
+
+.b-header--effect {
+  .b-header__wraper {
+    @media #{$md} {
+      flex-wrap: wrap;
+    }
+  }
+  .col {
+    @media #{$md} {
+      width: 100% !important;
+    }
+    &:nth-child(2) {
+      position: relative;
+    }
+  }
+  .o-border {
+    bottom: initial;
+  }
+  .badges-flouting {
+    .badges {
+      position: absolute;
+      bottom: 40%;
+      left: 0%;
+      display: block;
+      @media #{$lg} {
+        bottom: initial;
+        top: 250px;
+      }
+      @media #{$sm} {
+        top: 50px;
+      }
+      svg {
+        display: block;
+        margin-bottom: 30px;
+        width: 70px;
+        height: 70px;
+        @media #{$sm} {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .galeria {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    // height: 100%;
+    @media #{$sm} {
+      height: initial;
+      margin-bottom: 50px;
+    }
+    .galeria_item {
+      //   min-height: 300px;
+      background-position: center;
+      background-size: cover;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      &:nth-child(1) {
+        width: 35%;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        height: 350px;
+        @media #{$sm} {
+          height: 180px;
+        }
+      }
+      &:nth-child(2) {
+        width: 40%;
+        margin-bottom: 20px;
+        height: 450px;
+        @media #{$sm} {
+          height: 220px;
+        }
+      }
+      &:nth-child(3) {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        height: 200px;
+        @media #{$sm} {
+          height: 200px;
+        }
+        @media #{$xs} {
+          height: 150px;
+        }
+      }
+      &:nth-child(4) {
+        width: 50%;
+        height: 200px;
+        @media #{$xs} {
+          height: 150px;
+        }
+      }
+    }
+  }
+}

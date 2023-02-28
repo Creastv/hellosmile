@@ -58,6 +58,12 @@
   }
 }
 
+.b-cta-bar.narrow {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
 .b-cta-bar--main {
   background-color: $main;
   * {

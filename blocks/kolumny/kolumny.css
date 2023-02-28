@@ -1,10 +1,12 @@
 .b-kolumny .b-kolumny__wraper {
   display: flex;
   gap: 50px;
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 768px) {
   .b-kolumny .b-kolumny__wraper {
     flex-wrap: wrap;
+    margin-bottom: 30px;
   }
 }
 .b-kolumny .b-kolumny__wraper .col {

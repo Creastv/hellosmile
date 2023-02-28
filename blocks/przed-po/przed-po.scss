@@ -1,0 +1,15 @@
+@import "../../src/css/scss/variable";
+.b-przed-po {
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
+  .b-przed-po__wraper {
+    .b-przed-po__item {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

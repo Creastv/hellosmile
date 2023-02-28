@@ -206,6 +206,14 @@ body.active {
   opacity: 0.5;
 }
 
+.anchor {
+  height: 100px;
+  width: 100px;
+  margin-top: -100px;
+  position: absolute;
+  z-index: -1;
+}
+
 .scroll-anchor {
   display: block;
   /* width: 100%; */
@@ -679,6 +687,27 @@ body.active {
 @media only screen and (max-width: 1300px) {
   .navbar__navigation > ul .liVisible {
     transform: translate(0, 0) !important;
+  }
+}
+.navbar__navigation > ul .current_page_item,
+.navbar__navigation > ul .current-page-ancestor {
+  position: relative;
+}
+.navbar__navigation > ul .current_page_item:before,
+.navbar__navigation > ul .current-page-ancestor:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../img/corner-mark.png);
+  width: 13px;
+  height: 13px;
+  top: -5px;
+  left: 5px;
+}
+@media only screen and (max-width: 1300px) {
+  .navbar__navigation > ul .current_page_item:before,
+  .navbar__navigation > ul .current-page-ancestor:before {
+    display: none;
   }
 }
 .navbar__navigation > ul .current_page_item > a,

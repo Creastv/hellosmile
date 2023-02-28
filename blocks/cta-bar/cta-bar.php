@@ -3,6 +3,10 @@ $link = get_field( 'link' );
 $title = get_field( 'title' );
 $desc = get_field( 'desc' );
 $style = get_field( 'style' );
+$w = get_field( 'width' );
+if($w == "Narrow") {
+$classW = "narrow";
+}
 if( $link ){
     $link_url = $link['url'];
     $link_title = $link['title'];
@@ -14,7 +18,7 @@ if($style == 'Revers') {
 } 
 ?>
 
-<div class="b-cta-bar <?php echo $classStyle; ?>">
+<div class="b-cta-bar <?php echo $classStyle; ?> <?php echo $classW; ?>">
     <div class="btn-cta-bar__wraper">
         <div class="col">
             <?php if($title) { ?>

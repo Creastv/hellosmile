@@ -161,6 +161,20 @@
     }
     .current_page_item,
     .current-page-ancestor {
+      position: relative;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(../img/corner-mark.png);
+        width: 13px;
+        height: 13px;
+        top: -5px;
+        left: 5px;
+        @media #{$lg} {
+          display: none;
+        }
+      }
       > a {
         font-weight: 700;
       }

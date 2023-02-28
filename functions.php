@@ -90,7 +90,13 @@ if( function_exists('acf_add_options_page') ) {
     'menu_title' => 'Hello Smile settings',
     'parent_slug' => 'themes.php',
   ));
+  acf_add_options_page(array(
+    'page_title' => 'Opinie',
+    'menu_title' => 'Opinie',
+    'parent_slug' => 'themes.php',
+  ));
 }
+
 
 
 /// modify the path to the icons directory

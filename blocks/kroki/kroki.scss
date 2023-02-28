@@ -4,6 +4,11 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+
+  margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 30px;
+  }
   .container {
     position: relative;
   }

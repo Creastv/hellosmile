@@ -23,7 +23,6 @@
                     <?php get_template_part('templates-parts/header/header', 'burger'); ?>
                     <?php get_template_part('templates-parts/header/header', 'swicher'); ?>
                     <?php get_template_part('templates-parts/header/header', 'contact'); ?>
-
                 </div>
             </div>
         </div>

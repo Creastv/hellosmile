@@ -84,6 +84,14 @@ body.active {
   opacity: 0.5;
 }
 
+.anchor {
+  height: 100px;
+  width: 100px;
+  margin-top: -100px;
+  position: absolute;
+  z-index: -1;
+}
+
 .scroll-anchor {
   display: block;
   /* width: 100%; */
@@ -543,6 +551,17 @@ body.active {
   }
 }
 
+.b-faq-form {
+  background-color: #eeeef0;
+  border-radius: 6px;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .b-faq-form {
+    padding: 20px;
+  }
+}
 .b-vote-bar {
   margin-bottom: 50px;
 }
@@ -724,6 +743,27 @@ body.active {
 
 .wp-block-spacer {
   background-color: #eeeef0 !important;
+}
+
+.anchor {
+  height: 100px;
+  background-color: #eeeef0 !important;
+  border-radius: 6px;
+  position: relative !important;
+  z-index: 1 !important;
+  margin-top: 0 !important;
+  width: 100% !important;
+  padding: 10px;
+}
+.anchor:before {
+  content: "Anchor point";
+  position: absolute;
+  color: #575289;
+  background-color: #575289;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #fff;
 }
 
 .wp-block {

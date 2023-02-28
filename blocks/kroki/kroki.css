@@ -3,6 +3,12 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .b-steps {
+    margin-bottom: 30px;
+  }
 }
 .b-steps .container {
   position: relative;

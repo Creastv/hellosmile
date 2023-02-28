@@ -3,6 +3,12 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 768px) {
+  .b-ceny-n-sekcja {
+    margin-bottom: 30px;
+  }
 }
 .b-ceny-n-sekcja .b-ceny-n-sekcja__wraper .row {
   display: flex;

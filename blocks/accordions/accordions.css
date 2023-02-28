@@ -206,6 +206,14 @@ body.active {
   opacity: 0.5;
 }
 
+.anchor {
+  height: 100px;
+  width: 100px;
+  margin-top: -100px;
+  position: absolute;
+  z-index: -1;
+}
+
 .scroll-anchor {
   display: block;
   /* width: 100%; */
@@ -238,6 +246,11 @@ body.active {
   width: 100%;
 }
 
+.faq {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
 .faq .accordion {
   border-top: 1px solid #eeeef0;
   border-bottom: 1px solid #eeeef0;

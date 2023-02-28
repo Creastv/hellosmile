@@ -53,11 +53,15 @@
   position: -webkit-sticky;
   position: sticky;
   top: 100px;
+  @media #{$md} {
+    display: none;
+  }
   nav {
     ul {
       list-style: none;
       padding: 0;
       li {
+        position: relative;
         display: block;
         width: 100%;
         a {
@@ -70,6 +74,23 @@
           &:hover {
             font-weight: 700;
           }
+        }
+      }
+      .active {
+        position: relative;
+        padding-left: 15px;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          background-image: url(../../src/img/corner-mark.png);
+          width: 13px;
+          height: 13px;
+          top: -5px;
+          left: 5px;
+        }
+        a {
+          font-weight: 700;
         }
       }
     }

@@ -38,9 +38,47 @@ function register_acf_block_types() {
     ));
 
     acf_register_block_type(array(
+        'name'              => 'header-effect',
+        'title'             => __('Header effecty'),
+        'render_template'   => 'blocks/header/header-effecty.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'header' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+        wp_enqueue_style( 'go-header',  get_template_directory_uri() . '/blocks/header/header.min.css' );
+        wp_enqueue_style( 'go-header-effect',  get_template_directory_uri() . '/blocks/header/header-effecty.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
         'name'              => 'faq-form',
-        'title'             => __('FAQ form'),
-        'render_template'   => 'blocks/faq-form/faq-form.php',
+        'title'             => __('Form'),
+        'render_template'   => 'blocks/form/form.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Form' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-form',  get_template_directory_uri() . '/blocks/form/form.min.css' );
+      },
+    ));
+    
+
+    acf_register_block_type(array(
+        'name'              => 'przed-po',
+        'title'             => __('Przed - Po'),
+        'render_template'   => 'blocks/przed-po/przed-po.php',
         'category'          => 'formatting',
         'icon' => array(
           'background' => '#575289',
@@ -51,7 +89,31 @@ function register_acf_block_types() {
       'keywords'          => array( 'Faq form' ),
       'supports' => array( 'align' =>false ),
       'enqueue_assets'    => function(){
-          wp_enqueue_style( 'go-faq-form',  get_template_directory_uri() . '/blocks/faq-form/faq-form.min.css' );
+         wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
+        wp_enqueue_script('go-swiper_js', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js',  array(), '20130456', true );
+        wp_enqueue_script('go-przed-po_init',  get_template_directory_uri() . '/blocks/przed-po/przed-po.js',  array(), '20130456', true );
+          wp_enqueue_style( 'go-przed-po',  get_template_directory_uri() . '/blocks/przed-po/przed-po.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+        'name'              => 'opinie',
+        'title'             => __('Opinie'),
+        'render_template'   => 'blocks/opinie/opinie.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Faq form' ),
+      'supports' => array( 'align' =>false ),
+      'enqueue_assets'    => function(){
+        wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
+        wp_enqueue_script('go-swiper_js', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js',  array(), '20130456', true );
+        wp_enqueue_script('go-opinie_init',  get_template_directory_uri() . '/blocks/opinie/opinie.js',  array(), '20130456', true );
+        wp_enqueue_style( 'go-opinie',  get_template_directory_uri() . '/blocks/opinie/opinie.min.css' );
       },
     ));
 
@@ -67,6 +129,20 @@ function register_acf_block_types() {
       ),
       'mode'            => 'preview', 
       'keywords'          => array( 'btn' ),
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'anchor',
+      'title'             => __('Anchor'),
+      'render_template'   => 'blocks/anchor/anchor.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'anchor' ),
     ));
 
     acf_register_block_type(array(
@@ -297,7 +373,8 @@ function register_acf_block_types() {
           'jsx' 			=> true,
         ],
       'enqueue_assets'    => function(){
-          wp_enqueue_style( 'go-vote',  get_template_directory_uri() . '/blocks/sticky-sidebar/sticky-sidebar.min.css' );
+          wp_enqueue_style( 'go-sticky-sidebra',  get_template_directory_uri() . '/blocks/sticky-sidebar/sticky-sidebar.min.css' );
+          wp_enqueue_script('go-sticky-sidebra-js', get_template_directory_uri() . '/blocks/sticky-sidebar/sticky-sidebar.js', array( 'jquery' ),'4', true );
       },
     ));
     

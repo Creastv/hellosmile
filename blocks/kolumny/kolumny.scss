@@ -4,8 +4,10 @@
   .b-kolumny__wraper {
     display: flex;
     gap: 50px;
+    margin-bottom: 50px;
     @media #{$sm} {
       flex-wrap: wrap;
+      margin-bottom: 30px;
     }
     .col {
       width: 50%;

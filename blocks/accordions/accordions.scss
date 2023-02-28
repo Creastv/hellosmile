@@ -13,10 +13,14 @@
   }
 }
 .faq {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
   .accordion {
     border-top: 1px solid $light;
     border-bottom: 1px solid $light;
     margin-top: -1px;
+
     .question {
       font-size: 18px;
       line-height: 22px;
