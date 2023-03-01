@@ -93,4 +93,9 @@
 }
 .lista-miast .miasto ul li > p {
   font-size: 18px;
+}
+.acf-block-preview .b-map-placowki {
+  width: 100% !important;
+  left: 0 !important;
+  margin-left: 0 !important;
 }/*# sourceMappingURL=placowki-lista.css.map */
