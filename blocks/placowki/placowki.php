@@ -17,9 +17,8 @@ $posts = get_posts( array(
             </div>
         </div>
     </div>
-
 </div>
-
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q&callback=initMap"> </script>
 
 <script>
 var locations = [
@@ -148,6 +147,4 @@ function initMap() {
         });
     }
 }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q&callback=initMap">
 </script>

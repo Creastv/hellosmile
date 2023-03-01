@@ -90,7 +90,24 @@ function register_acf_block_types() {
       'mode'            => 'preview', 
       'keywords'          => array( 'placowki' ),
       'enqueue_assets'    => function(){
-          wp_enqueue_style( 'go-placowki-lista',  get_template_directory_uri() . '/blocks/placowki/placowki-miasto.min.css' );
+          wp_enqueue_style( 'go-placowki-miasto',  get_template_directory_uri() . '/blocks/placowki/placowki-miasto.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+        'name'              => 'dropdown',
+        'title'             => __('Placowki + dropdown'),
+        'render_template'   => 'blocks/placowki/placowki-dropdown.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'placowki' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-dropdown',  get_template_directory_uri() . '/blocks/placowki/placowki-dropdown.min.css' );
       },
     ));
 
