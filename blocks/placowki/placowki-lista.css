@@ -9,12 +9,6 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
-  margin-bottom: 100px;
-}
-@media only screen and (max-width: 768px) {
-  .b-map-placowki {
-    margin-bottom: 50px;
-  }
 }
 .b-map-placowki .b-map-placowki__wraper {
   display: flex;

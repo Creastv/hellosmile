@@ -8,7 +8,7 @@ $posts = get_posts( array(
 $miasta = get_terms( 'miasto' );
 ?>
 <div class="b-map-placowki">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="b-map-placowki__wraper">
                 <div class="col">
