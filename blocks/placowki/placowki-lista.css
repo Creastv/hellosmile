@@ -73,7 +73,6 @@
 .lista-miast .miasto ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
   padding: 0px;
   list-style: none;
 }
@@ -85,6 +84,7 @@
 .lista-miast .miasto ul li {
   width: calc(50% - 50px);
   margin-bottom: 15px;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 768px) {
   .lista-miast .miasto ul li {
