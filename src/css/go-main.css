@@ -1483,6 +1483,15 @@ body.active {
   }
 }
 
+.col-3 {
+  width: 33.333%;
+}
+@media only screen and (max-width: 768px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+
 .form-group.checkbox {
   width: 70%;
 }
@@ -1684,6 +1693,15 @@ body.active {
 }
 @media only screen and (max-width: 768px) {
   .col-2 {
+    width: 100%;
+  }
+}
+
+.col-3 {
+  width: 33.333%;
+}
+@media only screen and (max-width: 768px) {
+  .col-3 {
     width: 100%;
   }
 }

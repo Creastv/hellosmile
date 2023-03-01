@@ -39,6 +39,12 @@
     width: 100%;
   }
 }
+.col-3 {
+  width: 33.333%;
+  @media #{$sm} {
+    width: 100%;
+  }
+}
 
 .form-group.checkbox {
   width: 70%;
