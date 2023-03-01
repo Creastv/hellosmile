@@ -38,6 +38,89 @@ function register_acf_block_types() {
     ));
 
     acf_register_block_type(array(
+        'name'              => 'placowki',
+        'title'             => __('Placowki + mapa'),
+        'render_template'   => 'blocks/placowki/placowki.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'placowki' ),
+      'supports'		=> [
+          'align'			=> false,
+          'anchor'		=> false,
+          'customClassName'	=> false,
+          'jsx' 			=> true,
+        ],
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-placowki',  get_template_directory_uri() . '/blocks/placowki/placowki.min.css' );
+      },
+    ));
+    
+    acf_register_block_type(array(
+        'name'              => 'placowkilista',
+        'title'             => __('Placowki - lista + mapa'),
+        'render_template'   => 'blocks/placowki/placowki-lista.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'placowki' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-placowki-lista',  get_template_directory_uri() . '/blocks/placowki/placowki-lista.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+        'name'              => 'placowki-wybrane',
+        'title'             => __('Placowki - miasto'),
+        'render_template'   => 'blocks/placowki/placowki-miasto.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'placowki' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-placowki-lista',  get_template_directory_uri() . '/blocks/placowki/placowki-miasto.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
+        'name'              => 'logos',
+        'title'             => __('Logo - partneerzy'),
+        'render_template'   => 'blocks/partnerzy/partnerzy.php',
+        'category'          => 'formatting',
+        'icon' => array(
+          'background' => '#575289',
+          'foreground' => '#fff',
+          'src' => 'ellipsis',
+        ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'Partnerzy' ),
+      'supports'		=> [
+          'align'			=> false,
+          'anchor'		=> false,
+          'customClassName'	=> false,
+          'jsx' 			=> true,
+        ],
+      'enqueue_assets'    => function(){
+         wp_enqueue_style( 'go-swipeer_css', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css' );
+        wp_enqueue_script('go-swiper_js', 'https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js',  array(), '20130456', true );
+        wp_enqueue_script('go-partnerzy_init',  get_template_directory_uri() . '/blocks/partnerzy/partnerzy.js',  array(), '20130456', true );
+          wp_enqueue_style( 'go-partnerzy',  get_template_directory_uri() . '/blocks/partnerzy/partnerzy.min.css' );
+      },
+    ));
+
+    acf_register_block_type(array(
         'name'              => 'header-effect',
         'title'             => __('Header effecty'),
         'render_template'   => 'blocks/header/header-effecty.php',

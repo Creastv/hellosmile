@@ -1,0 +1,47 @@
+@import "../../src/css/scss/variable";
+#map {
+  height: 450px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.b-map-placowki {
+  position: relative;
+  width: 100vw;
+  margin-left: -50vw;
+  left: 50%;
+  // margin-bottom: 100px;
+
+  .b-map-placowki__wraper {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 6px;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+    .col {
+      &:nth-child(1) {
+        width: 40%;
+        padding: 30px;
+        @media #{$md} {
+          width: 50%;
+        }
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+      &:nth-child(2) {
+        width: 60%;
+        @media #{$md} {
+          width: 50%;
+        }
+        @media #{$sm} {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

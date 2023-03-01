@@ -1,0 +1,36 @@
+@import "../../src/css/scss/variable";
+.b-miasta {
+  .b-miasta__wraper {
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 25%;
+        padding: 20px;
+        @media #{$lg} {
+          width: 33.33%;
+        }
+        @media #{$md} {
+          width: 50%;
+        }
+        @media #{$sm} {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 10px;
+        }
+        .miasto {
+          //   padding: 20px;
+          p {
+            font-size: 18px;
+            color: $black;
+          }
+          span {
+            width: 16px;
+          }
+        }
+      }
+    }
+  }
+}

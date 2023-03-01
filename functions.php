@@ -113,3 +113,8 @@ add_filter('acf_icon_path_suffix',
 // }
  
 // add_action( 'pre_get_posts', 'wpsites_exclude_latest_post', 1 );
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q');
+}
+add_action('acf/init', 'my_acf_init');
