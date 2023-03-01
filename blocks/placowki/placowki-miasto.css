@@ -2,6 +2,7 @@
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .b-miasta .b-miasta__wraper ul li {
