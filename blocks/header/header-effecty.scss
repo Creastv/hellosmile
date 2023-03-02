@@ -21,14 +21,22 @@
     .badges {
       position: absolute;
       bottom: 40%;
-      left: 0%;
+      left: 4%;
       display: block;
       @media #{$lg} {
         bottom: initial;
-        top: 250px;
+        top: 50px;
       }
       @media #{$sm} {
         top: 50px;
+      }
+      img {
+        display: block;
+        margin-bottom: 5px;
+        @media #{$sm} {
+          width: 40px;
+          height: 40px;
+        }
       }
       svg {
         display: block;
