@@ -30,7 +30,7 @@ if($wrap){
             <div class="b-header__wraper">
                 <div class="col <?php echo  $align; ?>">
                     <?php if($title) { ?>
-                    <<?php echo $tag; ?> class="section-title"><?php echo $title; ?>
+                    <<?php echo $tag; ?> class="entry-title  section-title"><?php echo $title; ?>
                         <?php if($subtitle) { ?>
                         <span class="section-subtitle"><?php echo $subtitle; ?></span>
                         <?php } ?>

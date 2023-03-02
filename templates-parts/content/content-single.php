@@ -2,7 +2,7 @@
     <header>
         <div class="t-page-wraper">
             <div class="t-page-title">
-                <h1 class="section-title">
+                <h1 class="entry-title section-title">
                     <?php the_title(); ?>
                 </h1>
                 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="17" viewBox="0 0 29 17">
