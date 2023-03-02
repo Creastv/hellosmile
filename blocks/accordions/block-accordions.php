@@ -10,8 +10,8 @@ $count = 0;
             <?php if($colOne) { ?>
             <div class="col" itemscope="" itemtype="https://schema.org/FAQPage">
                 <?php foreach($colOne['accordion'] as $acc) { ?>
-                <div class="accordion js <?php echo $count == 0  ?  'active' : false ?> ">
-                    <h3 class="question h5" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <div class="accordion js <?php echo $count == 0  ?  'active' : false ?> " itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="question h5">
                         <span itemprop="name"><?php echo $acc['accordion_name']; ?></span>
                     </h3>
                     <div class="answer" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
