@@ -40,9 +40,16 @@
 
         <?php the_content(); ?>
 
-        <?php if(is_singular('post')) { ?>
+        <?php if(is_singular('post')) { 
+            $av_id = get_the_author_meta('ID');
+            $im = get_field( 'avatar', 'user_'. $av_id );
+        ?>
         <div id="author-bio">
+            <?php if($im) { ?>
+            <div id="author-avatar"><img style="max-width:60px; height:auto;" src="<?php echo esc_url($im['url']); ?>" alt="<?php echo esc_attr($im['alt']); ?>" /></div>
+            <?php } else { ?>
             <div id="author-avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 60 ); ?></div>
+            <?php } ?>
 
             <div id="author-details">
                 <div class="author-head">
