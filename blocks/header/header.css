@@ -127,6 +127,33 @@
   padding: 30px 0;
   display: flex;
 }
+@media only screen and (max-width: 998px) {
+  .badges-only .badges {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .badges-only .badges {
+    flex-wrap: none;
+  }
+}
+.badges-only img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1300px) {
+  .badges-only img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .badges-only img {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 .acf-block-preview .b-header {
   width: 100%;

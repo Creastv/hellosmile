@@ -602,6 +602,23 @@ body.active {
     order: 2;
   }
 }
+.badges img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 1300px) {
+  .badges img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .badges img {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 .score-bar {
   display: flex;

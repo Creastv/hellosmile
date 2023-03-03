@@ -115,6 +115,27 @@
 .badges-only {
   padding: 30px 0;
   display: flex;
+  .badges {
+    @media #{$md} {
+      flex-wrap: wrap;
+    }
+    @media #{$sm} {
+      flex-wrap: none;
+    }
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    @media #{$lg} {
+      width: 100px;
+      height: 100px;
+    }
+    @media #{$sm} {
+      width: 70px;
+      height: 70px;
+    }
+  }
 }
 
 .acf-block-preview {

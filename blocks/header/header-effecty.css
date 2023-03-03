@@ -34,6 +34,8 @@
 .b-header--effect .badges-flouting .badges img {
   display: block;
   margin-bottom: 5px;
+  max-width: 80px;
+  height: auto;
 }
 @media only screen and (max-width: 768px) {
   .b-header--effect .badges-flouting .badges img {
