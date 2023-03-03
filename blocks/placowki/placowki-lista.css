@@ -88,6 +88,10 @@
 .lista-miast .miasto ul li > p {
   font-size: 18px;
 }
+.lista-miast .miasto ul li span {
+  display: block;
+}
+
 .acf-block-preview .b-map-placowki {
   width: 100% !important;
   left: 0 !important;
