@@ -30,144 +30,144 @@ $send = get_field( 'wysylka', 'options' );
                     </g>
                 </svg>
             </a>
-          
+
             <?php if($adres) { ?>
             <div class="calaps">
-            <div class="calaps__opener"> 
-                <p>Kontakt</p>
-            </div>
-            <div class="calaps__list">
-            <address>
-                <?php if ( $adres['nazwa'] ) { ?>
-                <p><b><?php echo $adres['nazwa']; ?></b></p>
-                <?php } ?>
-                <?php if ( $adres['adres'] ) { ?>
-                <p><?php echo $adres['adres']; ?>
-                </p>
-                <?php } ?>
-                <?php if ( $adres['nip'] ) { ?>
-                <p><?php echo $adres['nip']; ?></p>
-                <?php } ?>
-                <br>
-                <?php if($adres['kontakt']) { ?>
-                    <?php foreach ($adres['kontakt'] as $con) { ?>
-                        <?php if($con['link']) { ?>
-                            <a class="link" href="<?php echo $con['link']; ?>">
-                        <?php } else { ?>
-                            <p class="link">
+                <div class="calaps__opener">
+                    <p>Kontakt</p>
+                </div>
+                <div class="calaps__list">
+                    <address>
+                        <?php if ( $adres['nazwa'] ) { ?>
+                        <p><b><?php echo $adres['nazwa']; ?></b></p>
                         <?php } ?>
-                            <?php if($con['ikona']) { ?>
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $con['ikona']; ?>.svg" alt="ikona" width="19px" height="19px">
-                            <?php } ?>
-                             <?php if($con['tresc']) { ?>
-                                <span><?php echo $con['tresc']; ?></span>
-                            <?php } ?>
+                        <?php if ( $adres['adres'] ) { ?>
+                        <p><?php echo $adres['adres']; ?>
+                        </p>
+                        <?php } ?>
+                        <?php if ( $adres['nip'] ) { ?>
+                        <p><?php echo $adres['nip']; ?></p>
+                        <?php } ?>
+                        <br>
+                        <?php if($adres['kontakt']) { ?>
+                        <?php foreach ($adres['kontakt'] as $con) { ?>
                         <?php if($con['link']) { ?>
+                        <a class="link" href="<?php echo $con['link']; ?>">
+                            <?php } else { ?>
+                            <p class="link">
+                                <?php } ?>
+                                <?php if($con['ikona']) { ?>
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $con['ikona']; ?>.svg" alt="ikona" width="19px" height="19px">
+                                <?php } ?>
+                                <?php if($con['tresc']) { ?>
+                                <span><?php echo $con['tresc']; ?></span>
+                                <?php } ?>
+                                <?php if($con['link']) { ?>
                         </a>
                         <?php } else { ?>
-                            <p>
-                        <?php } ?>
-                    
-                    <?php } ?>
-                <?php } ?>
-            </address>
-            </div>
-            </div>
-            <?php } ?>
-        </div>
-        <div class="col">
-            
-            <div class="calaps">
-            <?php if($menu1['tytul']) { ?>
-               <div class="calaps__opener">
-               <p class="title-menu"><?php echo $menu1['tytul']; ?></p>
-               </div>
-            <?php } ?>
-          
-            <?php if($menu1['menu']) { ?>
-               <div class="calaps__list">
-               <?php echo $menu1['menu']; ?>
-               </div>
-            <?php } ?>
-            </div>
-      
-        </div>
-        <div class="col">
-            <div class="calaps">
-            <?php if($menu2['tytul']) { ?>
-                 <div class="calaps__opener">
-               <p class="title-menu"><?php echo $menu2['tytul']; ?></p>
-            </div>
-            <?php } ?>
-            <?php if($menu2['menu']) { ?>
-                <div class="calaps__list">
-                <?php echo $menu2['menu']; ?>
+                        <p>
+                            <?php } ?>
+
+                            <?php } ?>
+                            <?php } ?>
+                    </address>
                 </div>
-            <?php } ?>
             </div>
+            <?php } ?>
         </div>
         <div class="col">
+
             <div class="calaps">
-              <?php if($menu3['tytul']) { ?>
+                <?php if($menu1['tytul']) { ?>
                 <div class="calaps__opener">
-               <p class="title-menu"><?php echo $menu3['tytul']; ?></p>
-              </div>
-            <?php } ?>
-            <?php if($menu3['menu']) { ?>
-                <div class="calaps__list">
-                <?php echo $menu3['menu']; ?>
+                    <p class="title-menu"><?php echo $menu1['tytul']; ?></p>
                 </div>
-            <?php } ?>
+                <?php } ?>
+
+                <?php if($menu1['menu']) { ?>
+                <div class="calaps__list">
+                    <?php echo $menu1['menu']; ?>
+                </div>
+                <?php } ?>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="calaps">
+                <?php if($menu2['tytul']) { ?>
+                <div class="calaps__opener">
+                    <p class="title-menu"><?php echo $menu2['tytul']; ?></p>
+                </div>
+                <?php } ?>
+                <?php if($menu2['menu']) { ?>
+                <div class="calaps__list">
+                    <?php echo $menu2['menu']; ?>
+                </div>
+                <?php } ?>
             </div>
         </div>
         <div class="col">
-            <?php if($sm) { ?> 
-                <div class="social-media">
-                    <?php if($sm['tytul']) { ?> 
-                    <span><?php echo $sm['tytul']; ?></span>
-                    <?php } ?>
-                    <?php if($sm['linki']) { ?>
-                    <ul>
-                        <?php foreach($sm['linki'] as $s) { ?>
-                        <li>
-                            <a href="<?php $s['link']; ?>">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $s['ikona']; ?>.svg" width="28px" height="28px" alt="Social media" >
-                            </a>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                    <?php } ?>
+            <div class="calaps">
+                <?php if($menu3['tytul']) { ?>
+                <div class="calaps__opener">
+                    <p class="title-menu"><?php echo $menu3['tytul']; ?></p>
                 </div>
-            <?php } ?> 
-            <?php if($send) { ?> 
-                <div class="delivery">
-                    <?php if($send['tytul']) { ?> 
-                    <span><?php echo $send['tytul']; ?></span>
-                    <?php } ?>
-                    <?php if($send['logos']) { ?>
-                        <ul>
-                            <?php foreach($send['logos'] as $logo) { ?>
-                                    <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $logo['logo']; ?>.svg" alt="Wysyłka" ></li>
-                            <?php } ?>
-                        </ul>
-                    <?php } ?>
+                <?php } ?>
+                <?php if($menu3['menu']) { ?>
+                <div class="calaps__list">
+                    <?php echo $menu3['menu']; ?>
                 </div>
-            <?php } ?> 
-            <?php if($send) { ?> 
-                <div class="pay">
-                    <?php if($pay['tytul']) { ?> 
-                    <span><?php echo $pay['tytul']; ?></span>
+                <?php } ?>
+            </div>
+        </div>
+        <div class="col">
+            <?php if($sm) { ?>
+            <div class="social-media">
+                <?php if($sm['tytul']) { ?>
+                <span><?php echo $sm['tytul']; ?></span>
+                <?php } ?>
+                <?php if($sm['linki']) { ?>
+                <ul>
+                    <?php foreach($sm['linki'] as $s) { ?>
+                    <li>
+                        <a href="<?php echo $s['link']; ?>" target="_blank">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $s['ikona']; ?>.svg" width="28px" height="28px" alt="Social media">
+                        </a>
+                    </li>
                     <?php } ?>
-                    <?php if($pay['logos']) { ?>
-                        <ul>
-                            <?php foreach($pay['logos'] as $logo) { ?>
-                                    <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $logo['logo']; ?>.svg" alt="Wysyłka" ></li>
-                            <?php } ?>
-                        </ul>
+                </ul>
+                <?php } ?>
+            </div>
+            <?php } ?>
+            <?php if($send) { ?>
+            <div class="delivery">
+                <?php if($send['tytul']) { ?>
+                <span><?php echo $send['tytul']; ?></span>
+                <?php } ?>
+                <?php if($send['logos']) { ?>
+                <ul>
+                    <?php foreach($send['logos'] as $logo) { ?>
+                    <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $logo['logo']; ?>.svg" alt="Wysyłka"></li>
                     <?php } ?>
-                </div>
-            <?php } ?> 
-           
+                </ul>
+                <?php } ?>
+            </div>
+            <?php } ?>
+            <?php if($send) { ?>
+            <div class="pay">
+                <?php if($pay['tytul']) { ?>
+                <span><?php echo $pay['tytul']; ?></span>
+                <?php } ?>
+                <?php if($pay['logos']) { ?>
+                <ul>
+                    <?php foreach($pay['logos'] as $logo) { ?>
+                    <li><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/icons/<?php echo $logo['logo']; ?>.svg" alt="Wysyłka"></li>
+                    <?php } ?>
+                </ul>
+                <?php } ?>
+            </div>
+            <?php } ?>
+
         </div>
     </div>
 </div>
