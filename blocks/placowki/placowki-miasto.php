@@ -21,8 +21,15 @@ $miast = get_field( 'miasto' );
             <li>
                 <div class="miasto">
                     <p><b><?php the_title(); ?></b></p>
+                    <?php if($inf['adres']) { ?>
                     <span><?php echo $inf['adres']; ?></span>
+                    <?php } ?>
+                    <?php if($inf['kod_pocztowy']) { ?>
+                    <span><?php echo $inf['kod_pocztowy']; ?></span>
+                    <?php } ?>
+                    <?php if($inf['strona_www']) { ?>
                     <span><?php echo $inf['strona_www']; ?></span>
+                    <?php } ?>
                 </div>
             </li>
             <?php endwhile; endif; ?>
