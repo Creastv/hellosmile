@@ -7,7 +7,7 @@ function register_acf_block_types() {
         'render_template'   => 'blocks/accordions/block-accordions.php',
         'category'          => 'formatting',
         'icon' => array(
-          'background' => '#bc9c3b',
+          'background' => '#575289',
           'foreground' => '#fff',
           'src' => 'ellipsis',
         ),
@@ -520,7 +520,7 @@ function register_acf_block_types() {
     //     'render_template'   => 'blocks/list/block-list.php',
     //     'category'          => 'formatting',
     //     'icon' => array(
-    //       'background' => '#bc9c3b',
+    //       'background' => '#575289',
     //       'foreground' => '#fff',
     //       'src' => 'ellipsis',
     //     ),
