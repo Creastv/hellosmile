@@ -178,4 +178,15 @@
 
 .b-cta-bar--revers {
   border: 1px solid #575289;
+}
+
+.b-cta-bar--v2 .btn-cta-bar__wraper .col:nth-child(1) {
+  width: 180px;
+}
+.b-cta-bar--v2 .btn-cta-bar__wraper .main-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.b-cta-bar--v2 .btn-cta-bar__wraper svg {
+  margin: 0 20px;
 }/*# sourceMappingURL=cta-bar.css.map */

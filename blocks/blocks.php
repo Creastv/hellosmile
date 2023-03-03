@@ -59,6 +59,8 @@ function register_acf_block_types() {
           wp_enqueue_style( 'go-placowki',  get_template_directory_uri() . '/blocks/placowki/placowki.min.css' );
       },
     ));
+
+    
     
     acf_register_block_type(array(
         'name'              => 'placowkilista',
@@ -439,6 +441,23 @@ function register_acf_block_types() {
           wp_enqueue_style( 'go-cta-bar',  get_template_directory_uri() . '/blocks/cta-bar/cta-bar.min.css' );
       },
     ));
+    acf_register_block_type(array(
+      'name'              => 'cta-bar-2',
+      'title'             => __('CTA-bar-v2'),
+      'render_template'   => 'blocks/cta-bar/cta-bar-2.php',
+      'category'          => 'formatting',
+      'icon' => array(
+        'background' => '#575289',
+        'foreground' => '#fff',
+        'src' => 'ellipsis',
+      ),
+      'mode'            => 'preview', 
+      'keywords'          => array( 'btn' ),
+      'enqueue_assets'    => function(){
+          wp_enqueue_style( 'go-cta-bar-v2',  get_template_directory_uri() . '/blocks/cta-bar/cta-bar.min.css' );
+      },
+    ));
+
     acf_register_block_type(array(
         'name'              => 'vote-bar',
         'title'             => __('Vote - bar'),
