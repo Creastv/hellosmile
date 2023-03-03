@@ -128,9 +128,9 @@ function initMap() {
             <h3>${locations[count][0]}</h3>
             </div>
             <div class="bottom">
-            <p>${locations[count][1]}</p>
-            <p>${locations[count][2]}</p>
-            <p>${locations[count][3]}</p>
+            <span>${locations[count][1]}</span>
+            <span>${locations[count][2]}</span>
+            <span>${locations[count][3]}</span>
             </div>
             </div>
             `,
