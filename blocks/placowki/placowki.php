@@ -135,13 +135,20 @@ function initMap() {
             </div>
             `,
         });
-
+        // map.addListener("center_changed", () => {
+        //     // 3 seconds after the center of the map has changed, pan back to the
+        //     // marker.
+        //     window.setTimeout(() => {
+        //         map.panTo(marker.getPosition());
+        //     }, 3000);
+        // });
         google.maps.event.addListener(marker, 'click', function() {
 
 
             var marker_map = this.getMap();
-            map.setZoom(8);
-            map.setCenter(marker.getPosition());
+
+            marker_map.setZoom(8);
+            // marker_map.setCenter(marker.getPosition());
             this.info.open(marker_map, this);
 
             // Note: If you call open() without passing a marker, the InfoWindow will use the position specified upon construction through the InfoWindowOptions object literal.
