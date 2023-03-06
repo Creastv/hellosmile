@@ -52,6 +52,18 @@
   }
 }
 
+.wraper-tooltip h3 {
+  margin-bottom: 10px;
+}
+.wraper-tooltip span {
+  display: block;
+  margin-bottom: 3px;
+}
+.wraper-tooltip .btn {
+  padding: 3px 10px;
+  margin: 10px 0;
+}
+
 .lista-miast {
   height: 400px;
   overflow-y: scroll;
