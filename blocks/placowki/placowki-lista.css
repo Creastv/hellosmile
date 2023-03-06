@@ -34,6 +34,7 @@
   .b-map-placowki .b-map-placowki__wraper .col:nth-child(1) {
     width: 100%;
     order: 2;
+    padding: 30px 0px;
   }
 }
 .b-map-placowki .b-map-placowki__wraper .col:nth-child(2) {
