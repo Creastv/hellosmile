@@ -39,6 +39,12 @@ a {
   color: $main;
   transition: all 0.1s linear;
 }
+
+.single-post {
+  .entry-content {
+    text-align: justify;
+  }
+}
 .entry-content {
   max-width: 1114px;
   margin: 0 auto;
