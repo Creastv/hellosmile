@@ -29,6 +29,10 @@ setup_postdata($post);
 $location = get_field('lokalizacja', $post->ID);
 $info =  get_field('info', $post->ID);
 $title = get_the_title($post->ID);
+if ( !empty( $location ) ) {
+    $map_url = 'https://www.google.com/maps/dir/?api=1&destination=' . $location['lat'] . ',' . $location['lng'];
+    // echo '<a href="'. esc_url( $map_url ) . '" rel="nooopener">Get directions</a>';
+}
 ?>['<?php echo $title; ?>', '<?php echo $info['adres']; ?>', '<?php echo $info['kod_pocztowy']; ?>', '<?php echo $info['strona_www']; ?>', '<?php echo $location['lat']; ?>', '<?php echo $location['lng']; ?>', '<?php echo $i; ?>'],
     <?php $i++; endforeach; ?>
     // ['Maroubra Beach', -33.950198, 151.259302, 1]
@@ -131,6 +135,7 @@ function initMap() {
             <span>${locations[count][1]}</span>
             <span>${locations[count][2]}</span>
             <span>${locations[count][3]}</span>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${locations[count][4]},${locations[count][5]}" rel="nooopener">Wyznacz trasę</a>
             </div>
             </div>
             `,
