@@ -89,6 +89,15 @@
 .lista-miast .miasto ul li > p {
   font-size: 18px;
 }
+.lista-miast .miasto ul li a {
+  display: block;
+  text-decoration: none;
+  color: #545454;
+}
+.lista-miast .miasto ul li a:hover {
+  color: #575289;
+  text-decoration: underline;
+}
 .lista-miast .miasto ul li span {
   display: block;
 }
