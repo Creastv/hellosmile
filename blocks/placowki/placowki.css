@@ -20,7 +20,7 @@
 @media only screen and (max-width: 768px) {
   .b-map-placowki .b-map-placowki__wraper {
     flex-wrap: wrap;
-    padding: 15px;
+    padding: 0px;
   }
 }
 .b-map-placowki .b-map-placowki__wraper .col:nth-child(1) {
@@ -35,6 +35,11 @@
 @media only screen and (max-width: 768px) {
   .b-map-placowki .b-map-placowki__wraper .col:nth-child(1) {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .b-map-placowki .b-map-placowki__wraper .col:nth-child(1) {
+    padding: 10px;
   }
 }
 .b-map-placowki .b-map-placowki__wraper .col:nth-child(2) {

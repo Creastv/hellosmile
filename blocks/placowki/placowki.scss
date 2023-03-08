@@ -20,7 +20,7 @@
     border-radius: 6px;
     @media #{$sm} {
       flex-wrap: wrap;
-      padding: 15px;
+      padding: 0px;
     }
     .col {
       &:nth-child(1) {
@@ -31,7 +31,13 @@
         }
         @media #{$sm} {
           width: 100%;
+          
         }
+        @media #{$xs} {
+         padding: 10px;
+          
+        }
+
       }
       &:nth-child(2) {
         width: 60%;
