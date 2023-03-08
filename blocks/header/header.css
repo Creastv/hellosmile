@@ -93,6 +93,11 @@
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .b-header .b-header__wraper .col .desc br {
+    display: none;
+  }
+}
 .b-header .b-header__wraper .col-full {
   width: 100%;
   padding: 0 !important;
