@@ -159,6 +159,12 @@
     height: 70px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .badges-only img {
+    max-width: calc(25% - 5px);
+    height: auto;
+  }
+}
 
 .acf-block-preview .b-header {
   width: 100%;

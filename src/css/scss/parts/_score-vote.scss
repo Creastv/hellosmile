@@ -30,6 +30,12 @@
   @media #{$md} {
     order: 2;
   }
+  @media #{$sm} {
+    gap: 10px;
+  }
+  @media #{$x} {
+    gap: 5px;
+  }
   img {
     max-width: 100%;
     width: 100%;
@@ -41,6 +47,10 @@
     @media #{$sm} {
       width: 70px;
       height: 70px;
+    }
+    @media #{$x} {
+      max-width: calc(25% - 5px);
+      height: auto;
     }
   }
 }
@@ -76,17 +86,26 @@
       @media #{$sm} {
         order: 1;
       }
+      @media #{$x} {
+        width: 100%;
+       }
     }
     &:nth-child(2) {
       @media #{$sm} {
         order: 3;
         width: 100%;
       }
+      @media #{$x} {
+        width: 100%;
+       }
     }
     &:nth-child(3) {
       @media #{$sm} {
         order: 2;
       }
+       @media #{$x} {
+        width: 100%;
+       }
     }
     @media #{$sm} {
       width: calc(50% - 10px);

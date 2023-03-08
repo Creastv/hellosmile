@@ -43,6 +43,12 @@
     height: 40px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .b-header--effect .badges-flouting .badges img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .b-header--effect .badges-flouting .badges svg {
   display: block;
   margin-bottom: 30px;

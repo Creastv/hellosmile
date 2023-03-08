@@ -140,6 +140,10 @@
       width: 70px;
       height: 70px;
     }
+    @media #{$x} {
+      max-width: calc(25% - 5px);
+      height: auto;
+    }
   }
 }
 

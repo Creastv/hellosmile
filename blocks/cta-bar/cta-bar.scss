@@ -52,6 +52,7 @@
         }
         @media #{$xs} {
           width: 100%;
+          white-space: break-spaces;
         }
       }
     }

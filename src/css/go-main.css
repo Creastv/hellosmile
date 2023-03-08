@@ -1850,6 +1850,16 @@ body.active {
     order: 2;
   }
 }
+@media only screen and (max-width: 768px) {
+  .badges {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .badges {
+    gap: 5px;
+  }
+}
 .badges img {
   max-width: 100%;
   width: 100%;
@@ -1865,6 +1875,12 @@ body.active {
   .badges img {
     width: 70px;
     height: 70px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .badges img {
+    max-width: calc(25% - 5px);
+    height: auto;
   }
 }
 
@@ -1893,15 +1909,30 @@ body.active {
     order: 1;
   }
 }
+@media only screen and (max-width: 400px) {
+  .score-bar .score-bar__item:nth-child(1) {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .score-bar .score-bar__item:nth-child(2) {
     order: 3;
     width: 100%;
   }
 }
+@media only screen and (max-width: 400px) {
+  .score-bar .score-bar__item:nth-child(2) {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .score-bar .score-bar__item:nth-child(3) {
     order: 2;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .score-bar .score-bar__item:nth-child(3) {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
