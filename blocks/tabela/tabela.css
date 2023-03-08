@@ -29,6 +29,7 @@
 .b-table--dlaczego-waro tr td {
   width: 25%;
   text-align: center;
+  min-width: 125px;
 }
 .b-table--dlaczego-waro tr td:nth-child(1) {
   font-size: 14px;
