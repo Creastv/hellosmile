@@ -101,6 +101,9 @@ a {
     font-size: 31px;
     line-height: 37px;
   }
+  br{
+    display: block!important;
+  }
   span {
     color: $main;
     display: block;

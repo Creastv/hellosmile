@@ -116,6 +116,9 @@ a {
     line-height: 37px;
   }
 }
+.section-title br {
+  display: block !important;
+}
 .section-title span {
   color: #575289;
   display: block;
