@@ -21,6 +21,11 @@
     // font-size: 18px;
     padding: 10px 25px;
   }
+  @media #{$x} {
+    width: 100%;
+    font-size: 16px!important;
+    white-space: break-spaces;
+  }
 }
 .btn-revers {
   color: $main;
