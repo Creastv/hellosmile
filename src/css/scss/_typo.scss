@@ -19,9 +19,11 @@ h6,
   font-weight: 700;
   color: $black;
   margin: 0;
+  br{
   @media #{$md} {
     display: none;
   }
+}
 }
 .h1 {
   margin: 0;
