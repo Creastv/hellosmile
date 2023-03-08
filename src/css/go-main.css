@@ -21,6 +21,22 @@ h6,
   color: #0d0b1e;
   margin: 0;
 }
+@media only screen and (max-width: 998px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    display: none;
+  }
+}
 
 .h1 {
   margin: 0;
