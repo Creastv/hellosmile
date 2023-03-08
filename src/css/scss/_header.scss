@@ -16,6 +16,9 @@
     @media #{$lg} {
       gap: 20px;
     }
+     @media #{$sm} {
+      gap:10px;
+     }
     @media #{$lg} {
       flex-wrap: wrap;
     }
@@ -55,6 +58,9 @@
   @media #{$sm} {
     max-width: 70%;
   }
+   @media #{$xs} {
+    max-width: 50%;
+  }
   * {
     color: #fff;
   }
@@ -67,6 +73,10 @@
       width: 180px;
       height: auto;
     }
+     @media #{$xs} {
+      width: 100%;
+      height: auto;
+     }
   }
 }
 // contact cta
@@ -84,8 +94,16 @@
 .navbar__lang-pp {
   display: flex;
   align-items: center;
-  @media #{$sm} {
-    display: none;
+  .btn-panel{
+    span{
+      @media #{$xs} {
+        font-size: 10px;
+      }
+       @media #{$x} {
+        display: none;
+      }
+    }
+
   }
   ul {
     margin-right: 30px;
@@ -100,7 +118,7 @@
 .navbar__navigation {
   @media #{$lg} {
     flex: none;
-    order: 3;
+    // order: 3;
   }
   > ul {
     position: relative;

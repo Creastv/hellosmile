@@ -30,12 +30,7 @@
 // }
 ?>
 <div class="navbar__lang-pp">
-    <!-- <div class="lang-swicher">
-        <ul>
-            <li>PL</li>
-        </ul>
-    </div> -->
-    <a href="https://panel.hellosmile.pl/moje-konto/" class="btn-panel" target="_blank">
+    <a href="https://panel.hellosmile.pl/moje-konto/" class="btn-panel">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.599" viewBox="0 0 24 18.599">
             <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(6.44)" fill="none" stroke="#575289" stroke-width="2">
                 <ellipse cx="5.86" cy="6" rx="5.86" ry="6" stroke="none" />
