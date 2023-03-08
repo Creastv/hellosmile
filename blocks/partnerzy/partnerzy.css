@@ -27,6 +27,7 @@
 @media only screen and (max-width: 768px) {
   .b-partnerzy .b-partnerzy__wraper > span {
     width: 100%;
+    margin-right: 0px;
     text-align: center;
   }
   .b-partnerzy .b-partnerzy__wraper > span br {
