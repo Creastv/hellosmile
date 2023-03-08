@@ -271,6 +271,12 @@ body.active {
   }
 }
 
+@media only screen and (max-width: 460px) {
+  .single-post .section-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
 .single-post .t-page-wraper {
   padding: 50px 0px;
   text-align: center;
@@ -360,8 +366,20 @@ body.active {
   display: flex;
   gap: 10px;
 }
+@media only screen and (max-width: 768px) {
+  #author-bio {
+    flex-wrap: wrap;
+  }
+}
 #author-bio #author-details .author-head p.h3 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  #articles .section-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .rank-math-breadcrumb p {
@@ -371,9 +389,24 @@ body.active {
   justify-content: center;
   gap: 10px;
 }
+@media only screen and (max-width: 768px) {
+  .rank-math-breadcrumb p {
+    gap: 3px;
+  }
+}
 .rank-math-breadcrumb a {
   text-decoration: none;
   font-size: 16px;
+}
+@media only screen and (max-width: 460px) {
+  .rank-math-breadcrumb a {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rank-math-breadcrumb a {
+    font-size: 12px;
+  }
 }
 .rank-math-breadcrumb .last {
   color: #0d0b1e;
@@ -384,6 +417,16 @@ body.active {
   overflow: hidden;
   text-overflow: ellipsis;
   text-overflow: "----";
+}
+@media only screen and (max-width: 460px) {
+  .rank-math-breadcrumb .last {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .rank-math-breadcrumb .last {
+    font-size: 12px;
+  }
 }
 
 .go-pagination {

@@ -142,6 +142,13 @@
 
 // Single post
 .single-post {
+  .section-title {
+    @media #{$xs} {
+        font-size: 24px;
+        line-height: 30px;
+        }
+    }
+
   .t-page-wraper {
     padding: 50px 0px;
     text-align: center;
@@ -233,6 +240,10 @@
   border-bottom: 1px solid $light;
   display: flex;
   gap: 10px;
+   @media #{$sm} {
+    flex-wrap: wrap;
+   }
+
   #author-avatar {
     img {
       // border-radius: 100%;
@@ -249,6 +260,16 @@
   }
 }
 
+#articles{
+  .section-title {
+    @media #{$x} {
+        font-size: 18px;
+        line-height: 24px;
+        }
+    }
+
+}
+
 // Breathcrumb
 .rank-math-breadcrumb {
   p {
@@ -257,10 +278,19 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    @media #{$sm} {
+      gap:3px;
+    }
   }
   a {
     text-decoration: none;
     font-size: 16px;
+     @media #{$xs} {
+      font-size: 14px;
+    }
+    @media #{$x} {
+      font-size: 12px;
+    }
   }
   .last {
     color: $black;
@@ -271,6 +301,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     text-overflow: "----";
+     @media #{$xs} {
+      font-size: 14px;
+    }
+    @media #{$x} {
+      font-size: 12px;
+    }
   }
 }
 // pagination

@@ -59,7 +59,7 @@ a {
   transition: all 0.1s linear;
 }
 
-.single-post .entry-content {
+.single-post .entry-content p {
   text-align: justify;
 }
 
