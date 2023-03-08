@@ -37,7 +37,7 @@
     width: 100%;
   }
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 400px) {
   .b-map-placowki .b-map-placowki__wraper .col:nth-child(1) {
     padding: 10px;
   }
