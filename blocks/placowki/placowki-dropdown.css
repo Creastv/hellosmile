@@ -63,4 +63,14 @@ select::-ms-expand {
 /* Transition */
 .select:hover::after {
   color: #575289;
+}
+
+.page-id-9 .b-dropdown-miast {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .page-id-9 .b-dropdown-miast {
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=placowki-dropdown.css.map */

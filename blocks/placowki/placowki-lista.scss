@@ -10,6 +10,9 @@
   width: 100vw;
   margin-left: -50vw;
   left: 50%;
+     @media #{$sm} {
+      
+     }
   .b-map-placowki__wraper {
     display: flex;
     align-items: center;

@@ -57,3 +57,12 @@ select::-ms-expand {
 .select:hover::after {
   color: $main;
 }
+
+
+.page-id-9 .b-dropdown-miast{
+	margin-top:-50px;
+	margin-bottom:50px;
+  @media #{$sm} {
+    margin-top: 0px;
+  }
+}
