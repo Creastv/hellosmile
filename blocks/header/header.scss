@@ -79,6 +79,11 @@
             font-size: 16px;
           }
         }
+        br{
+           @media #{$sm} {
+            display: none;
+          }
+        }
       }
       // .btn {
       //   margin-bottom: 50px;
