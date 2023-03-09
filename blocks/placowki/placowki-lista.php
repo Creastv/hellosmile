@@ -42,10 +42,11 @@ $miasta = get_terms( 'miasto' );
                                 }
                                 ?>
                                 <li>
-                                    <p><b><?php the_title(); ?></b></p>
+
                                     <?php if($location) { ?>
                                     <a href="<?php echo esc_url( $map_url ); ?>" rel="nooopener" target="_blank">
                                         <?php } ?>
+                                        <p><b><?php the_title(); ?></b></p>
                                         <?php if($inf['adres']) { ?>
                                         <span><?php echo $inf['adres']; ?></span>
                                         <?php } ?>
