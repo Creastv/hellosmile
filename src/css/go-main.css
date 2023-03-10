@@ -1059,6 +1059,7 @@ body.active {
 .error404 .btn {
   text-align: center;
   margin: 0 auto;
+  white-space: initial;
 }
 
 #error {

@@ -7,7 +7,7 @@
                 </h1>
                 <div id="error" class="text-center">
                     <h2><?php _e( 'Upss. Chyba się zgubiłeś?', 'go' ); ?></h2>
-                    <a class="btn btn-main" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <a class="btn" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <?php _e( 'Wróć do strony głównej ', 'go' ); ?></a>
                 </div>
             </div>
