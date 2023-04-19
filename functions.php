@@ -118,3 +118,29 @@ function my_acf_init() {
     acf_update_setting('google_api_key', 'AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q');
 }
 add_action('acf/init', 'my_acf_init');
+
+
+
+/**
+ * Reload after Consent. 
+ * Only necessary for incomplete integrations, or plugins which handle consent serverside
+ */
+function cmplz_reload_after_consent() {
+    ?>
+    <script>
+        document.addEventListener('cmplz_status_change', function (e) {
+            if (e.detail.category === 'marketing' && e.detail.value==='allow') {
+                location.reload();
+            }
+        });
+
+        document.addEventListener('cmplz_status_change_service', function (e) {
+            if ( e.detail.value ) {
+                location.reload();
+            }
+        });
+
+    </script>
+    <?php
+}
+add_action( 'wp_footer', 'cmplz_reload_after_consent' );
