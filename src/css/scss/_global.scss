@@ -112,3 +112,14 @@ body.active {
   width: 100%;
   gap: 10px;
 }
+
+// .tr-widget {
+//   padding-bottom: 100px;
+// }
+
+.rplg .rplg-flash-wrap {
+  top: 95% !important;
+  @media #{$sm} {
+    top: 100% !important;
+  }
+}
