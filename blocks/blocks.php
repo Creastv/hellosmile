@@ -76,6 +76,9 @@ function register_acf_block_types() {
       'keywords'          => array( 'placowki' ),
       'enqueue_assets'    => function(){
           wp_enqueue_style( 'go-placowki-lista',  get_template_directory_uri() . '/blocks/placowki/placowki-lista.min.css' );
+          wp_enqueue_script('go-placowki-lista_init',  get_template_directory_uri() . '/blocks/placowki/b-map.js',  array(), '20130456', true );
+          wp_enqueue_script('go-goggole_js', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB8pMQYqHehRWSDeAVKOrv8JD9s1dR6Y2Q&callback=initMap',  array(), '20130456', true );
+          
       },
     ));
 
