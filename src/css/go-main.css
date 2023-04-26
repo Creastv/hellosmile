@@ -561,11 +561,6 @@ body.active {
     gap: 10px;
   }
 }
-@media only screen and (max-width: 1300px) {
-  #header .navbar {
-    flex-wrap: wrap;
-  }
-}
 @media only screen and (max-width: 768px) {
   #header .navbar {
     padding: 20px 0;

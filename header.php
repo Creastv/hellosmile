@@ -44,6 +44,15 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <script type='text/javascript'>
+	  window.smartlook||(function(d) {
+		var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+		var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+		c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+		})(document);
+		smartlook('init', '31952adf08a2f67ffac3cc0e9a40432357f20b81', { region: 'eu' });
+	</script>
+
 </head>
 
 <body <?php body_class(); ?>>
