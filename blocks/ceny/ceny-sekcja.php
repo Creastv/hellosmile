@@ -28,7 +28,7 @@ if( $link ){
                     <div class="b-ceny-nakladek">
                         <div class="b-ceny-nakladek__wraper">
                             <?php foreach($nakladki as $item) {?>
-                            <div class="b-ceny-nakladek__item">
+                            <?php echo $item['link'] ? ' <a class="b-ceny-nakladek__item" href=" ' . $item['link'] . ' " >' : ' <div class="b-ceny-nakladek__item">'; ?>
                                 <div class="nazwa">
                                     <?php if($item['nazwa']) { ?>
                                     <h3><?php echo $item['nazwa']; ?></h3>
@@ -52,7 +52,7 @@ if( $link ){
                                         <?php } ?>
                                     </div>
                                 </div>
-                            </div>
+                            <?php echo $item['link'] ? '</a>' : '</div>'; ?>
                             <?php } ?>
                         </div>
                     </div>

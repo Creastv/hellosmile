@@ -1,3 +1,10 @@
+.b-ceny-nakladek .b-ceny-nakladek__wraper a.b-ceny-nakladek__item {
+  text-decoration: none !important;
+}
+.b-ceny-nakladek .b-ceny-nakladek__wraper a.b-ceny-nakladek__item:hover {
+  background-color: #fff;
+  box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.1);
+}
 .b-ceny-nakladek .b-ceny-nakladek__wraper .b-ceny-nakladek__item {
   border-radius: 6px;
   margin-bottom: 15px;

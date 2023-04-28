@@ -59,6 +59,11 @@ $filmik = get_field( 'filmik' );
                 </div>
                 <?php if($img) { ?>
                 <div class="col">
+                    <?php if(get_field('cupon')) { ?>
+                    <div class="sm-code">
+                    <?php  get_template_part('templates-parts/parts/cod'); ?>
+                    </div>
+                    <?php } ?>
                     <div class="img">
                         <?php echo wp_get_attachment_image( $img, $size ); ?>
                         <?php if($video) { ?>
@@ -92,6 +97,12 @@ $filmik = get_field( 'filmik' );
             <?php if($dvotes) { ?>
             <?php  get_template_part('templates-parts/parts/score-vote'); ?>
             <?php } ?>
+            <?php if(get_field('cupon')) { ?>
+            <div class="md-code">
+            <?php  get_template_part('templates-parts/parts/cod'); ?>
+            </div>
+            <?php } ?>
+            
         </div>
     </div>
 </div>
